@@ -1,4 +1,4 @@
-update=6/5/2017 4:43:47 PM
+update=1/5/2018 12:13:15 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=../../FoxWestern
+LibDir=FoxWestern.pretty;../Board1;../kicad libraries
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -60,3 +60,4 @@ LibName28=contrib
 LibName29=valves
 LibName30=C:/Users/djmal/Documents/GitHub/FoxWestern/kicad libraries/stm32
 LibName31=kicad libraries/FoxWestern
+LibName32=C:/Users/Rubicore/Documents/GitHub/CycloneRocketry/kicad libraries/FoxWestern
