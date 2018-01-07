@@ -2292,4 +2292,57 @@ NoConn ~ 6000 5400
 NoConn ~ 6000 5300
 NoConn ~ 6000 5200
 NoConn ~ 6000 5100
+Text Notes 6250 5150 0    60   ~ 0
+PS0 and PS1 are protocol select pins.  \nLeave them connected to ground through\n 10k resistors for standard/fast I2C.\n
+$Comp
+L GPS U?
+U 1 1 5A5339C0
+P 8200 6700
+F 0 "U?" H 8400 6200 60  0000 C CNN
+F 1 "GPS" H 8200 7200 60  0000 C CNN
+F 2 "" H 8150 6950 60  0001 C CNN
+F 3 "" H 8150 6950 60  0001 C CNN
+	1    8200 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3V3 #PWR?
+U 1 1 5A533C10
+P 7750 7000
+F 0 "#PWR?" H 7750 6850 50  0001 C CNN
+F 1 "+3V3" H 7750 7140 50  0000 C CNN
+F 2 "" H 7750 7000 50  0001 C CNN
+F 3 "" H 7750 7000 50  0001 C CNN
+	1    7750 7000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5A533CCF
+P 7550 6900
+F 0 "#PWR?" H 7550 6650 50  0001 C CNN
+F 1 "GND" H 7550 6750 50  0000 C CNN
+F 2 "" H 7550 6900 50  0001 C CNN
+F 3 "" H 7550 6900 50  0001 C CNN
+	1    7550 6900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7550 6900 7750 6900
+Text Label 7750 6700 2    60   ~ 0
+USART2_RX
+Text Label 7750 6800 2    60   ~ 0
+USART2_TX
+Wire Wire Line
+	5400 3550 5050 3550
+Text Label 5050 3550 2    60   ~ 0
+GPS_FIX
+Text Label 7750 6600 2    60   ~ 0
+GPS_FIX
+NoConn ~ 7750 6500
+NoConn ~ 7750 6400
+NoConn ~ 7750 6300
+NoConn ~ 7750 7100
+Text Notes 7350 7550 0    60   ~ 0
+GPS_FIX is HIGH when\nthe unit has a GPS lock.
 $EndSCHEMATC
