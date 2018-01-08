@@ -1164,7 +1164,7 @@
     (model ${KISYS3DMOD}/Pin_Headers.3dshapes/Pin_Header_Straight_1x04_Pitch2.54mm.wrl
       (at (xyz 0 -0.15 0))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 90))
+      (rotate (xyz 0 0 0))
     )
   )
 
@@ -1744,7 +1744,7 @@
     (pad 38 thru_hole oval (at -2.54 45.72) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
       (net 85 "Net-(J23-Pad38)"))
     (model ${KISYS3DMOD}/Socket_Strips.3dshapes/Socket_Strip_Straight_2x19_Pitch2.54mm.wrl
-      (at (xyz -0.05 -0.9 0))
+      (at (xyz -0.15 -0.9 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 270))
     )
@@ -1857,7 +1857,7 @@
     (pad 38 thru_hole oval (at -2.54 45.72) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
       (net 78 /PC0))
     (model ${KISYS3DMOD}/Socket_Strips.3dshapes/Socket_Strip_Straight_2x19_Pitch2.54mm.wrl
-      (at (xyz -0.05 -0.9 0))
+      (at (xyz -0.15 -0.9 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 270))
     )
