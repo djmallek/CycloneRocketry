@@ -1400,6 +1400,12 @@ Text Notes 13000 11050 0    60   ~ 0
 1/8/2017
 Text Notes 14950 10750 0    60   ~ 0
 Made By: Danny Mallek
-Text Notes 13650 950  0    60   ~ 0
-2.2k pullups allow for fast I2C
+Text Notes 12850 950  0    60   ~ 0
+2.2k pullups allow for fast I2C. Test headers allow for easy testing.
+Text Notes 9050 1250 0    60   ~ 0
+Lin reg for powering microcontroller + sensors
+Text Notes 9500 2800 0    60   ~ 0
+lin reg for rfd900
+Text Notes 8900 1000 0    60   ~ 0
+Lin regs used to save money and reduce noise and complexity
 $EndSCHEMATC
