@@ -1,4 +1,4 @@
-update=1/5/2018 12:13:15 PM
+update=1/10/2018 9:33:18 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -61,3 +61,13 @@ LibName29=valves
 LibName30=C:/Users/djmal/Documents/GitHub/FoxWestern/kicad libraries/stm32
 LibName31=kicad libraries/FoxWestern
 LibName32=C:/Users/Rubicore/Documents/GitHub/CycloneRocketry/kicad libraries/FoxWestern
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
