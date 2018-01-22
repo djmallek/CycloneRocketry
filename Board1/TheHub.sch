@@ -1228,7 +1228,7 @@ U 1 1 5A656A37
 P 7750 3800
 F 0 "J1" H 7800 4000 50  0000 C CNN
 F 1 "Actuator Fdbk Conn" H 7800 3450 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Angled_2x03_Pitch2.54mm" H 7750 3800 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x03_Pitch2.54mm" H 7750 3800 50  0001 C CNN
 F 3 "" H 7750 3800 50  0001 C CNN
 	1    7750 3800
 	1    0    0    -1  
@@ -1516,7 +1516,7 @@ U 1 1 5A66BB75
 P 9350 4400
 F 0 "J2" H 9350 4600 50  0000 C CNN
 F 1 "QuadEnc_Conn" H 9350 4100 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Angled_1x04_Pitch2.54mm" H 9350 4400 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 9350 4400 50  0001 C CNN
 F 3 "" H 9350 4400 50  0001 C CNN
 	1    9350 4400
 	1    0    0    -1  
