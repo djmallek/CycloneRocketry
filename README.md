@@ -1,5 +1,3 @@
-# FoxWestern
-This is for a rocketry project.  It uses tracking, remote, and onboard logging to keep track of the rocket's location and howmany G's it pulls.
-Additionally, functionality is being added for electroincs control over control surfaces for future purposes.
-Right now, the board is a general development board, with plans to further refine design as physical rocket tests andcontrol surface research advance.
-All physical rocket files are stored on google drive.
+# Cyclone Rocketry
+
+This is an avionics control board for Iowa State's Cyclone Rocketry club. Our rocketry must carry a payload to a target altitude of 10,000ft.  Score is determined by how close a team's rocket can get to the target altitude, among other things.  To ensure we hit our target altitude, we have an air brakes system which actively calculates when and how long it needs to deploy it's air brakes system.  The board additionally provides data-logging and radio-relayed GPS tracking. 
