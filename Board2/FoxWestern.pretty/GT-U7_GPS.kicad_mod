@@ -1,4 +1,4 @@
-(module GT-U7_GPS (layer F.Cu) (tedit 5AD81BF6)
+(module GT-U7_GPS (layer F.Cu) (tedit 5AD94256)
   (fp_text reference "GT-U7 GPS" (at 5.588 -11.43) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
