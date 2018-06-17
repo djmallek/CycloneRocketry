@@ -974,9 +974,9 @@ F 3 "" H 5950 900 50  0001 C CNN
 	1    5950 900 
 	-1   0    0    1   
 $EndComp
-Text Label 5950 1000 2    60   ~ 0
-TXD
 Text Label 5950 1100 2    60   ~ 0
+TXD
+Text Label 5950 1000 2    60   ~ 0
 RXD
 $Comp
 L Conn_02x03_Odd_Even J8
@@ -1416,8 +1416,6 @@ F 3 "" H 5100 9650 50  0001 C CNN
 	1    5100 9650
 	1    0    0    -1  
 $EndComp
-Text Label 5650 9000 2    60   ~ 0
-CS
 NoConn ~ 5650 9600
 NoConn ~ 5650 8900
 Text Label 5650 9300 2    60   ~ 0
