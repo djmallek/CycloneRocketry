@@ -397,9 +397,9 @@ F 3 "" H 7150 5650 50  0001 C CNN
 	1    7150 5650
 	-1   0    0    1   
 $EndComp
-Text Label 7150 5300 2    60   ~ 0
-OSC_IN
 Text Label 7650 5300 0    60   ~ 0
+OSC_IN
+Text Label 7150 5300 2    60   ~ 0
 OSC_OUT
 $Comp
 L GND #PWR014
@@ -1905,17 +1905,6 @@ Wire Wire Line
 Connection ~ 3850 1350
 Wire Wire Line
 	3250 10450 2850 10450
-$Comp
-L Conn_01x01 J12
-U 1 1 5B2111CE
-P 3700 10550
-F 0 "J12" H 3700 10650 50  0000 C CNN
-F 1 "900MHz_Ant" H 3700 10450 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 3700 10550 50  0001 C CNN
-F 3 "" H 3700 10550 50  0001 C CNN
-	1    3700 10550
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2850 10550 3500 10550
 Wire Wire Line
@@ -2039,4 +2028,40 @@ Wire Wire Line
 	3700 9550 3700 9450
 Wire Wire Line
 	3700 9450 3850 9450
+Wire Notes Line
+	7550 2800 7800 2800
+Wire Notes Line
+	7550 2800 7550 2600
+Wire Notes Line
+	7550 2600 7800 2600
+Wire Notes Line
+	7800 2600 7800 2800
+Wire Notes Line
+	7800 2600 7550 2800
+Wire Notes Line
+	7800 2800 7550 2600
+Text Notes 5650 2400 0    60   ~ 0
+Install MPL3115A2 and do not install R9
+$Comp
+L Conn_Coaxial J12
+U 1 1 5B37DDA7
+P 3650 10550
+F 0 "J12" H 3660 10670 50  0000 C CNN
+F 1 "RF IN" V 3765 10550 50  0000 C CNN
+F 2 "Connectors:SMA_SMD_Jack_Straight" H 3650 10550 50  0001 C CNN
+F 3 "" H 3650 10550 50  0001 C CNN
+	1    3650 10550
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR073
+U 1 1 5B37EDCC
+P 3650 10750
+F 0 "#PWR073" H 3650 10500 50  0001 C CNN
+F 1 "GND" H 3650 10600 50  0000 C CNN
+F 2 "" H 3650 10750 50  0001 C CNN
+F 3 "" H 3650 10750 50  0001 C CNN
+	1    3650 10750
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
