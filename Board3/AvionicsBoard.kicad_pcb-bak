@@ -4971,7 +4971,7 @@
   (gr_text RFM95 (at 205.359 98.552) (layer F.SilkS)
     (effects (font (size 2 2) (thickness 0.3)))
   )
-  (gr_text GPS (at 206.756 88.9) (layer F.SilkS)
+  (gr_text GPS (at 207.01 88.9) (layer F.SilkS)
     (effects (font (size 2 2) (thickness 0.3)))
   )
   (gr_text 3 (at 97.0788 64.1731 90) (layer F.SilkS)

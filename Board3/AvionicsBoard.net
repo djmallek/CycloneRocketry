@@ -1,7 +1,7 @@
 (export (version D)
   (design
-    (source C:\Users\Rubicore\Documents\GitHub\CycloneRocketry\Board3\AvionicsBoard.sch)
-    (date "11/2/2018 11:02:57 PM")
+    (source C:/Users/Rubicore/Documents/GitHub/CycloneRocketry/Board3/AvionicsBoard.sch)
+    (date "11/3/2018 11:43:10 AM")
     (tool "Eeschema 4.0.7")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -251,7 +251,7 @@
       (tstamp 5B21BC42))
     (comp (ref J7)
       (value "RF IN")
-      (footprint FoxWestern:Edge_SMA)
+      (footprint FoxWestern:SMA_TH)
       (libsource (lib conn) (part Conn_Coaxial))
       (sheetpath (names /) (tstamps /))
       (tstamp 5B21D6BE))
@@ -365,7 +365,7 @@
       (tstamp 5B241BE0))
     (comp (ref J12)
       (value "RF IN")
-      (footprint FoxWestern:Edge_SMA)
+      (footprint FoxWestern:SMA_TH)
       (libsource (lib conn) (part Conn_Coaxial))
       (sheetpath (names /) (tstamps /))
       (tstamp 5B37DDA7))
@@ -900,12 +900,12 @@
         (pin (num 4) (name GND) (type power_in))
         (pin (num 5) (name Shield) (type passive)))))
   (libraries
-    (library (logical FoxWestern)
-      (uri "C:\\Users\\Rubicore\\Documents\\GitHub\\CycloneRocketry\\kicad libraries\\FoxWestern.lib"))
     (library (logical device)
       (uri "C:\\Program Files\\KiCad\\share\\kicad\\library\\device.lib"))
     (library (logical conn)
-      (uri "C:\\Program Files\\KiCad\\share\\kicad\\library\\conn.lib")))
+      (uri "C:\\Program Files\\KiCad\\share\\kicad\\library\\conn.lib"))
+    (library (logical FoxWestern)
+      (uri "C:\\Users\\Rubicore\\Documents\\GitHub\\CycloneRocketry\\kicad libraries\\FoxWestern.lib")))
   (nets
     (net (code 1) (name "Net-(J13-Pad5)")
       (node (ref J13) (pin 5)))
