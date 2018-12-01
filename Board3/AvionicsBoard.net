@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source C:/Users/Rubicore/Documents/GitHub/CycloneRocketry/Board3/AvionicsBoard.sch)
-    (date "11/3/2018 11:43:10 AM")
+    (date "11/30/2018 12:18:00 AM")
     (tool "Eeschema 4.0.7")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
