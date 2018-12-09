@@ -32,7 +32,6 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:FoxWestern
-LIBS:AvionicsBoard-cache
 EELAYER 25 0
 EELAYER END
 $Descr A3 16535 11693
@@ -881,23 +880,23 @@ SCL
 $Comp
 L Battery_Cell BT1
 U 1 1 5B212EC3
-P 8900 6900
-F 0 "BT1" H 9000 7000 50  0000 L CNN
-F 1 "Battery_Cell" H 9000 6900 50  0000 L CNN
-F 2 "Battery_Holders:Keystone_1058_1x2032-CoinCell" V 8900 6960 50  0001 C CNN
-F 3 "" V 8900 6960 50  0001 C CNN
-	1    8900 6900
+P 10400 1800
+F 0 "BT1" H 10500 1900 50  0000 L CNN
+F 1 "Battery_Cell" H 10500 1800 50  0000 L CNN
+F 2 "DannysLib:BR-1225A_HB" V 10400 1860 50  0001 C CNN
+F 3 "" V 10400 1860 50  0001 C CNN
+	1    10400 1800
 	1    0    0    -1  
 $EndComp
 $Comp
 L GND #PWR034
 U 1 1 5B2130E7
-P 8900 7100
-F 0 "#PWR034" H 8900 6850 50  0001 C CNN
-F 1 "GND" H 8900 6950 50  0000 C CNN
-F 2 "" H 8900 7100 50  0001 C CNN
-F 3 "" H 8900 7100 50  0001 C CNN
-	1    8900 7100
+P 10400 2000
+F 0 "#PWR034" H 10400 1750 50  0001 C CNN
+F 1 "GND" H 10400 1850 50  0000 C CNN
+F 2 "" H 10400 2000 50  0001 C CNN
+F 3 "" H 10400 2000 50  0001 C CNN
+	1    10400 2000
 	1    0    0    -1  
 $EndComp
 NoConn ~ 8550 6900
@@ -1560,17 +1559,6 @@ F 3 "" H 2100 1450 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Fuse F1
-U 1 1 5B202E3F
-P 3050 1350
-F 0 "F1" V 3130 1350 50  0000 C CNN
-F 1 "Fuse" V 2975 1350 50  0000 C CNN
-F 2 "Capacitors_SMD:C_1206" V 2980 1350 50  0001 C CNN
-F 3 "" H 3050 1350 50  0001 C CNN
-	1    3050 1350
-	0    1    1    0   
-$EndComp
-$Comp
 L D_Zener D1
 U 1 1 5B2214FD
 P 1550 1000
@@ -1603,14 +1591,10 @@ F 3 "" H 4500 850 50  0001 C CNN
 	1    4500 850 
 	1    0    0    -1  
 $EndComp
-Text Label 8900 6700 0    60   ~ 0
+Text Label 10400 1600 0    60   ~ 0
 B+
 Text Label 7250 1500 2    60   ~ 0
 B+
-Text Label 4150 8000 0    60   ~ 0
-MAX_M8_TX
-Text Label 4150 7900 0    60   ~ 0
-MAX_M8_RX
 $Comp
 L C C8
 U 1 1 5C022CED
@@ -1782,11 +1766,9 @@ Wire Wire Line
 Wire Wire Line
 	900  2900 800  2900
 Wire Wire Line
-	3200 1350 3900 1350
+	2750 1350 3900 1350
 Connection ~ 3600 1350
 Connection ~ 3250 1350
-Wire Wire Line
-	2750 1350 2900 1350
 Wire Wire Line
 	1700 4100 1700 4200
 Wire Wire Line
@@ -1835,16 +1817,7 @@ Wire Wire Line
 	7000 6700 7150 6700
 Connection ~ 7000 6600
 Wire Wire Line
-	8900 6700 8550 6700
-Wire Wire Line
-	8900 7000 8900 7100
-Wire Wire Line
-	8550 6800 8700 6800
-Wire Wire Line
-	8700 6800 8700 7050
-Wire Wire Line
-	8700 7050 8900 7050
-Connection ~ 8900 7050
+	10400 1900 10400 2000
 Wire Wire Line
 	7250 1700 7250 1600
 Wire Wire Line
@@ -1947,10 +1920,6 @@ Wire Wire Line
 Wire Wire Line
 	2350 8700 2350 8450
 Wire Wire Line
-	3850 8000 4150 8000
-Wire Wire Line
-	3850 7900 4150 7900
-Wire Wire Line
 	2600 9550 2600 10350
 Wire Wire Line
 	2600 10150 2500 10150
@@ -1982,10 +1951,6 @@ F 3 "" H 8900 1550 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8900 1500 8900 1550
-Text Label 7250 1200 2    60   ~ 0
-MAX_M8_RX
-Text Label 7250 1100 2    60   ~ 0
-MAX_M8_TX
 $Comp
 L MPL3115A2 U6
 U 1 1 5C02869C
@@ -2007,4 +1972,16 @@ Wire Wire Line
 Connection ~ 9150 1400
 Wire Wire Line
 	8900 1500 8600 1500
+Wire Wire Line
+	3850 7900 4150 7900
+Wire Wire Line
+	3850 8000 4150 8000
+Text Label 4150 7900 0    60   ~ 0
+MAX_M8_RX
+Text Label 4150 8000 0    60   ~ 0
+MAX_M8_TX
+Text Label 7250 1200 2    60   ~ 0
+TXD
+Text Label 7250 1100 2    60   ~ 0
+RXD
 $EndSCHEMATC
