@@ -1,0 +1,695 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:FoxWestern
+LIBS:MOSFET-N
+LIBS:MOSFET-P
+LIBS:Avionics4-cache
+EELAYER 25 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L STM32F466RE U?
+U 1 1 5C4BED43
+P 8550 5650
+F 0 "U?" H 9600 6800 60  0000 C CNN
+F 1 "STM32F466RE" H 8600 5700 60  0000 C CNN
+F 2 "" H 8800 5700 60  0001 C CNN
+F 3 "" H 8800 5700 60  0001 C CNN
+	1    8550 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5C4BEE16
+P 9000 7650
+F 0 "C?" H 9025 7750 50  0000 L CNN
+F 1 "2.2u" H 9025 7550 50  0000 L CNN
+F 2 "" H 9038 7500 50  0001 C CNN
+F 3 "" H 9000 7650 50  0001 C CNN
+	1    9000 7650
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5C4BF019
+P 9150 7850
+F 0 "#PWR?" H 9150 7600 50  0001 C CNN
+F 1 "GND" H 9150 7700 50  0000 C CNN
+F 2 "" H 9150 7850 50  0001 C CNN
+F 3 "" H 9150 7850 50  0001 C CNN
+	1    9150 7850
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5C4BF164
+P 9300 7650
+F 0 "C?" H 9325 7750 50  0000 L CNN
+F 1 "22u" H 9325 7550 50  0000 L CNN
+F 2 "" H 9338 7500 50  0001 C CNN
+F 3 "" H 9300 7650 50  0001 C CNN
+	1    9300 7650
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5C4BF7AF
+P 1550 3000
+F 0 "C?" H 1575 3100 50  0000 L CNN
+F 1 "100n" H 1575 2900 50  0000 L CNN
+F 2 "" H 1588 2850 50  0001 C CNN
+F 3 "" H 1550 3000 50  0001 C CNN
+	1    1550 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5C4BF7F7
+P 1800 3000
+F 0 "C?" H 1825 3100 50  0000 L CNN
+F 1 "100n" H 1825 2900 50  0000 L CNN
+F 2 "" H 1838 2850 50  0001 C CNN
+F 3 "" H 1800 3000 50  0001 C CNN
+	1    1800 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5C4BF822
+P 2050 3000
+F 0 "C?" H 2075 3100 50  0000 L CNN
+F 1 "100n" H 2075 2900 50  0000 L CNN
+F 2 "" H 2088 2850 50  0001 C CNN
+F 3 "" H 2050 3000 50  0001 C CNN
+	1    2050 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5C4BF84A
+P 2300 3000
+F 0 "C?" H 2325 3100 50  0000 L CNN
+F 1 "100n" H 2325 2900 50  0000 L CNN
+F 2 "" H 2338 2850 50  0001 C CNN
+F 3 "" H 2300 3000 50  0001 C CNN
+	1    2300 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5C4BF875
+P 2550 3000
+F 0 "C?" H 2575 3100 50  0000 L CNN
+F 1 "100n" H 2575 2900 50  0000 L CNN
+F 2 "" H 2588 2850 50  0001 C CNN
+F 3 "" H 2550 3000 50  0001 C CNN
+	1    2550 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5C4BF8A3
+P 2800 3000
+F 0 "C?" H 2825 3100 50  0000 L CNN
+F 1 "100n" H 2825 2900 50  0000 L CNN
+F 2 "" H 2838 2850 50  0001 C CNN
+F 3 "" H 2800 3000 50  0001 C CNN
+	1    2800 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5C4BF8D4
+P 3050 3000
+F 0 "C?" H 3075 3100 50  0000 L CNN
+F 1 "100n" H 3075 2900 50  0000 L CNN
+F 2 "" H 3088 2850 50  0001 C CNN
+F 3 "" H 3050 3000 50  0001 C CNN
+	1    3050 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5C4BF908
+P 3300 3000
+F 0 "C?" H 3325 3100 50  0000 L CNN
+F 1 "100n" H 3325 2900 50  0000 L CNN
+F 2 "" H 3338 2850 50  0001 C CNN
+F 3 "" H 3300 3000 50  0001 C CNN
+	1    3300 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5C4BF93D
+P 3550 3000
+F 0 "C?" H 3575 3100 50  0000 L CNN
+F 1 "100n" H 3575 2900 50  0000 L CNN
+F 2 "" H 3588 2850 50  0001 C CNN
+F 3 "" H 3550 3000 50  0001 C CNN
+	1    3550 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5C4BF981
+P 3800 3000
+F 0 "C?" H 3825 3100 50  0000 L CNN
+F 1 "100n" H 3825 2900 50  0000 L CNN
+F 2 "" H 3838 2850 50  0001 C CNN
+F 3 "" H 3800 3000 50  0001 C CNN
+	1    3800 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5C4BF9BE
+P 4050 3000
+F 0 "C?" H 4075 3100 50  0000 L CNN
+F 1 "100n" H 4075 2900 50  0000 L CNN
+F 2 "" H 4088 2850 50  0001 C CNN
+F 3 "" H 4050 3000 50  0001 C CNN
+	1    4050 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5C4BFA00
+P 1300 3000
+F 0 "C?" H 1325 3100 50  0000 L CNN
+F 1 "4.7u" H 1325 2900 50  0000 L CNN
+F 2 "" H 1338 2850 50  0001 C CNN
+F 3 "" H 1300 3000 50  0001 C CNN
+	1    1300 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR?
+U 1 1 5C4C00ED
+P 1300 2700
+F 0 "#PWR?" H 1300 2550 50  0001 C CNN
+F 1 "+3.3V" H 1300 2840 50  0000 C CNN
+F 2 "" H 1300 2700 50  0001 C CNN
+F 3 "" H 1300 2700 50  0001 C CNN
+	1    1300 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5C4C040A
+P 4300 3000
+F 0 "C?" H 4325 3100 50  0000 L CNN
+F 1 "100n" H 4325 2900 50  0000 L CNN
+F 2 "" H 4338 2850 50  0001 C CNN
+F 3 "" H 4300 3000 50  0001 C CNN
+	1    4300 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5C4C0A3A
+P 1300 3300
+F 0 "#PWR?" H 1300 3050 50  0001 C CNN
+F 1 "GND" H 1300 3150 50  0000 C CNN
+F 2 "" H 1300 3300 50  0001 C CNN
+F 3 "" H 1300 3300 50  0001 C CNN
+	1    1300 3300
+	1    0    0    -1  
+$EndComp
+Text Notes 1600 2700 0    60   ~ 0
+Place these as close to the microcontroller as possible. \n3x for each VDD/VSS pair.
+$Comp
+L AOZ1280 U?
+U 1 1 5C4C2218
+P 4200 1600
+F 0 "U?" H 4400 1400 60  0000 C CNN
+F 1 "AOZ1280" H 4200 1800 60  0000 C CNN
+F 2 "" H 4250 1500 60  0001 C CNN
+F 3 "" H 4250 1500 60  0001 C CNN
+	1    4200 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 5C4C2408
+P 4900 1700
+F 0 "R?" V 4980 1700 50  0000 C CNN
+F 1 "10K" V 4900 1700 50  0000 C CNN
+F 2 "" V 4830 1700 50  0001 C CNN
+F 3 "" H 4900 1700 50  0001 C CNN
+	1    4900 1700
+	0    1    1    0   
+$EndComp
+$Comp
+L L L?
+U 1 1 5C4C25EE
+P 4850 1250
+F 0 "L?" V 4800 1250 50  0000 C CNN
+F 1 "2.2uH" V 4925 1250 50  0000 C CNN
+F 2 "" H 4850 1250 50  0001 C CNN
+F 3 "" H 4850 1250 50  0001 C CNN
+F 4 "https://www.digikey.com/short/pthmwz" V 4850 1250 60  0001 C CNN "Digikey"
+	1    4850 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 5C4C28AF
+P 3300 1200
+F 0 "R?" V 3380 1200 50  0000 C CNN
+F 1 "49.9k" V 3300 1200 50  0000 C CNN
+F 2 "" V 3230 1200 50  0001 C CNN
+F 3 "" H 3300 1200 50  0001 C CNN
+	1    3300 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 5C4C292C
+P 3300 1650
+F 0 "R?" V 3380 1650 50  0000 C CNN
+F 1 "15.8k" V 3300 1650 50  0000 C CNN
+F 2 "" V 3230 1650 50  0001 C CNN
+F 3 "" H 3300 1650 50  0001 C CNN
+	1    3300 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9000 7800 9300 7800
+Wire Wire Line
+	9150 7800 9150 7850
+Connection ~ 9150 7800
+Wire Wire Line
+	9000 7500 9300 7500
+Connection ~ 9150 7500
+Wire Wire Line
+	9150 6950 9150 7500
+Wire Wire Line
+	1300 2700 1300 2850
+Wire Wire Line
+	1550 2800 1550 2850
+Connection ~ 1300 2800
+Wire Wire Line
+	1800 2800 1800 2850
+Connection ~ 1550 2800
+Wire Wire Line
+	2050 2800 2050 2850
+Connection ~ 1800 2800
+Wire Wire Line
+	2300 2800 2300 2850
+Connection ~ 2050 2800
+Wire Wire Line
+	2550 2800 2550 2850
+Connection ~ 2300 2800
+Wire Wire Line
+	2800 2800 2800 2850
+Connection ~ 2550 2800
+Wire Wire Line
+	3050 2800 3050 2850
+Connection ~ 2800 2800
+Wire Wire Line
+	3300 2800 3300 2850
+Connection ~ 3050 2800
+Wire Wire Line
+	3550 2800 3550 2850
+Connection ~ 3300 2800
+Wire Wire Line
+	3800 2800 3800 2850
+Connection ~ 3550 2800
+Wire Wire Line
+	4050 2800 4050 2850
+Connection ~ 3800 2800
+Wire Wire Line
+	4300 2800 4300 2850
+Connection ~ 4050 2800
+Wire Wire Line
+	1300 2800 4300 2800
+Wire Wire Line
+	1300 3150 1300 3300
+Wire Wire Line
+	1300 3200 4300 3200
+Wire Wire Line
+	1550 3200 1550 3150
+Wire Wire Line
+	1800 3200 1800 3150
+Connection ~ 1550 3200
+Wire Wire Line
+	2050 3200 2050 3150
+Connection ~ 1800 3200
+Wire Wire Line
+	2300 3200 2300 3150
+Connection ~ 2050 3200
+Wire Wire Line
+	2550 3200 2550 3150
+Connection ~ 2300 3200
+Wire Wire Line
+	2800 3200 2800 3150
+Connection ~ 2550 3200
+Wire Wire Line
+	3050 3200 3050 3150
+Connection ~ 2800 3200
+Wire Wire Line
+	3300 3200 3300 3150
+Connection ~ 3050 3200
+Wire Wire Line
+	3550 3200 3550 3150
+Connection ~ 3300 3200
+Wire Wire Line
+	3800 3200 3800 3150
+Connection ~ 3550 3200
+Wire Wire Line
+	4050 3200 4050 3150
+Connection ~ 3800 3200
+Wire Wire Line
+	4300 3200 4300 3150
+Connection ~ 4050 3200
+Connection ~ 1300 3200
+Wire Wire Line
+	4750 1700 4650 1700
+Wire Wire Line
+	4650 1600 5050 1600
+Wire Wire Line
+	5050 1600 5050 1700
+Wire Wire Line
+	3300 1350 3300 1500
+$Comp
+L C C?
+U 1 1 5C4C2BD2
+P 4200 1200
+F 0 "C?" H 4225 1300 50  0000 L CNN
+F 1 "10n" H 4225 1100 50  0000 L CNN
+F 2 "" H 4238 1050 50  0001 C CNN
+F 3 "" H 4200 1200 50  0001 C CNN
+	1    4200 1200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4350 1200 4700 1200
+Wire Wire Line
+	4050 1200 3700 1200
+Wire Wire Line
+	3700 1200 3700 1500
+Wire Wire Line
+	3700 1500 3750 1500
+Wire Wire Line
+	3300 1000 5050 1000
+Wire Wire Line
+	3750 1700 3450 1700
+Wire Wire Line
+	3450 1700 3450 1450
+Wire Wire Line
+	3450 1450 3300 1450
+Connection ~ 3300 1450
+$Comp
+L GND #PWR?
+U 1 1 5C4C2FBD
+P 3750 1600
+F 0 "#PWR?" H 3750 1350 50  0001 C CNN
+F 1 "GND" H 3750 1450 50  0000 C CNN
+F 2 "" H 3750 1600 50  0001 C CNN
+F 3 "" H 3750 1600 50  0001 C CNN
+	1    3750 1600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3300 1050 3300 1000
+$Comp
+L GND #PWR?
+U 1 1 5C4C31A0
+P 3300 1800
+F 0 "#PWR?" H 3300 1550 50  0001 C CNN
+F 1 "GND" H 3300 1650 50  0000 C CNN
+F 2 "" H 3300 1800 50  0001 C CNN
+F 3 "" H 3300 1800 50  0001 C CNN
+	1    3300 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5C4C3785
+P 5350 1500
+F 0 "#PWR?" H 5350 1250 50  0001 C CNN
+F 1 "GND" H 5350 1350 50  0000 C CNN
+F 2 "" H 5350 1500 50  0001 C CNN
+F 3 "" H 5350 1500 50  0001 C CNN
+	1    5350 1500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C C?
+U 1 1 5C4C3964
+P 5200 1000
+F 0 "C?" H 5225 1100 50  0000 L CNN
+F 1 "10u" H 5225 900 50  0000 L CNN
+F 2 "" H 5238 850 50  0001 C CNN
+F 3 "" H 5200 1000 50  0001 C CNN
+	1    5200 1000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5C4C3A6C
+P 5350 1000
+F 0 "#PWR?" H 5350 750 50  0001 C CNN
+F 1 "GND" H 5350 850 50  0000 C CNN
+F 2 "" H 5350 1000 50  0001 C CNN
+F 3 "" H 5350 1000 50  0001 C CNN
+	1    5350 1000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4850 900  4850 1100
+Connection ~ 4850 1000
+Wire Wire Line
+	4650 1500 5050 1500
+Wire Wire Line
+	4700 1200 4700 1500
+Connection ~ 4700 1500
+Wire Wire Line
+	4850 1400 4850 1500
+Connection ~ 4850 1500
+$Comp
+L +3.3V #PWR?
+U 1 1 5C4C4BC7
+P 4850 900
+F 0 "#PWR?" H 4850 750 50  0001 C CNN
+F 1 "+3.3V" H 4850 1040 50  0000 C CNN
+F 2 "" H 4850 900 50  0001 C CNN
+F 3 "" H 4850 900 50  0001 C CNN
+	1    4850 900 
+	1    0    0    -1  
+$EndComp
+Text Notes 3350 900  0    60   ~ 0
+3.3v Buck Converter.\n3v to 26v input, 1.2A Output\n
+$Comp
+L C C?
+U 1 1 5C4C5D36
+P 5200 1900
+F 0 "C?" H 5225 2000 50  0000 L CNN
+F 1 "4.7u" H 5225 1800 50  0000 L CNN
+F 2 "" H 5238 1750 50  0001 C CNN
+F 3 "" H 5200 1900 50  0001 C CNN
+	1    5200 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5C4C5EC1
+P 5200 2050
+F 0 "#PWR?" H 5200 1800 50  0001 C CNN
+F 1 "GND" H 5200 1900 50  0000 C CNN
+F 2 "" H 5200 2050 50  0001 C CNN
+F 3 "" H 5200 2050 50  0001 C CNN
+	1    5200 2050
+	1    0    0    -1  
+$EndComp
+Text Label 5650 1700 0    60   ~ 0
+VIN
+Wire Wire Line
+	5050 1700 5650 1700
+Wire Wire Line
+	5200 1750 5200 1700
+Connection ~ 5200 1700
+$Comp
+L MOSFET-P U?
+U 1 1 5C4C884E
+P 1800 1400
+F 0 "U?" H 1830 1520 30  0000 L CNN
+F 1 "MOSFET-P" H 1825 1285 30  0000 L CNN
+F 2 "" H 1800 1350 60  0000 C CNN
+F 3 "" H 1800 1350 60  0000 C CNN
+F 4 "https://www.digikey.com/short/pthh41" H 1800 1400 60  0001 C CNN "Digikey"
+	1    1800 1400
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	2100 1400 2000 1400
+Wire Wire Line
+	2400 1100 2700 1100
+Wire Wire Line
+	2700 1100 2700 1400
+Wire Wire Line
+	2700 1400 2400 1400
+$Comp
+L R R?
+U 1 1 5C4C94B2
+P 1800 1800
+F 0 "R?" V 1880 1800 50  0000 C CNN
+F 1 "10k" V 1800 1800 50  0000 C CNN
+F 2 "" V 1730 1800 50  0001 C CNN
+F 3 "" H 1800 1800 50  0001 C CNN
+	1    1800 1800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1800 1650 1800 1600
+$Comp
+L GND #PWR?
+U 1 1 5C4C9784
+P 1800 2050
+F 0 "#PWR?" H 1800 1800 50  0001 C CNN
+F 1 "GND" H 1800 1900 50  0000 C CNN
+F 2 "" H 1800 2050 50  0001 C CNN
+F 3 "" H 1800 2050 50  0001 C CNN
+	1    1800 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 1950 1800 2050
+Wire Wire Line
+	1200 1350 1200 1700
+Wire Wire Line
+	1200 1400 1600 1400
+Wire Wire Line
+	1200 2000 1800 2000
+Wire Wire Line
+	1200 1800 1200 2000
+Connection ~ 1800 2000
+Wire Wire Line
+	1800 1600 1500 1600
+Wire Wire Line
+	1500 1600 1500 1050
+Wire Wire Line
+	1500 1100 2100 1100
+$Comp
+L VBUS #PWR?
+U 1 1 5C4CBBBB
+P 1500 1050
+F 0 "#PWR?" H 1500 900 50  0001 C CNN
+F 1 "VBUS" H 1500 1200 50  0000 C CNN
+F 2 "" H 1500 1050 50  0001 C CNN
+F 3 "" H 1500 1050 50  0001 C CNN
+	1    1500 1050
+	1    0    0    -1  
+$EndComp
+Connection ~ 1500 1100
+Text Label 2700 1100 0    60   ~ 0
+VIN
+$Comp
+L +BATT #PWR?
+U 1 1 5C4CE7E9
+P 1200 1350
+F 0 "#PWR?" H 1200 1200 50  0001 C CNN
+F 1 "+BATT" H 1200 1490 50  0000 C CNN
+F 2 "" H 1200 1350 50  0001 C CNN
+F 3 "" H 1200 1350 50  0001 C CNN
+	1    1200 1350
+	1    0    0    -1  
+$EndComp
+Connection ~ 1200 1400
+Text Notes 1000 800  0    60   ~ 0
+USB/Battery Power Switchover Circuit
+$Comp
+L D_Schottky D?
+U 1 1 5C4D010B
+P 5200 1500
+F 0 "D?" H 5200 1600 50  0000 C CNN
+F 1 "D_Schottky" H 5200 1400 50  0000 C CNN
+F 2 "" H 5200 1500 50  0001 C CNN
+F 3 "" H 5200 1500 50  0001 C CNN
+F 4 "https://www.digikey.com/short/pthmd8" H 5200 1500 60  0001 C CNN "Digikey"
+	1    5200 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L D_Schottky D?
+U 1 1 5C4D029C
+P 2250 1400
+F 0 "D?" H 2250 1500 50  0000 C CNN
+F 1 "D_Schottky" H 2250 1300 50  0000 C CNN
+F 2 "" H 2250 1400 50  0001 C CNN
+F 3 "" H 2250 1400 50  0001 C CNN
+F 4 "https://www.digikey.com/short/pthmd8" H 2250 1400 60  0001 C CNN "Digikey"
+	1    2250 1400
+	-1   0    0    1   
+$EndComp
+$Comp
+L D_Schottky D?
+U 1 1 5C4D03DB
+P 2250 1100
+F 0 "D?" H 2250 1200 50  0000 C CNN
+F 1 "D_Schottky" H 2250 1000 50  0000 C CNN
+F 2 "" H 2250 1100 50  0001 C CNN
+F 3 "" H 2250 1100 50  0001 C CNN
+F 4 "https://www.digikey.com/short/pthmd8" H 2250 1100 60  0001 C CNN "Digikey"
+	1    2250 1100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Conn_01x02 J?
+U 1 1 5C4D2AC8
+P 950 1800
+F 0 "J?" H 950 1900 50  0000 C CNN
+F 1 "3S Battery" H 950 1600 50  0000 C CNN
+F 2 "" H 950 1800 50  0001 C CNN
+F 3 "" H 950 1800 50  0001 C CNN
+	1    950  1800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1150 1800 1200 1800
+Wire Wire Line
+	1200 1700 1150 1700
+$EndSCHEMATC
