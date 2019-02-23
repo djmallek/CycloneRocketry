@@ -1,4 +1,4 @@
-update=2/22/2019 6:13:52 PM
+update=1/26/2019 12:58:29 AM
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,6 +23,8 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
+[general]
+version=1
 [eeschema]
 version=1
 LibDir=../kicad libraries
@@ -60,5 +62,3 @@ LibName30=atmel
 LibName31=contrib
 LibName32=valves
 LibName33=C:/Users/Rubicore/Documents/GitHub/CycloneRocketry/kicad libraries/FoxWestern
-[general]
-version=1
