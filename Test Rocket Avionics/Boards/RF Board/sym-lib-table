@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name Avionics-Board-1-rescue)(type Legacy)(uri "${KIPRJMOD}/Avionics Board 1-rescue.lib")(options "")(descr ""))
+  (lib (name RF-Board-rescue)(type Legacy)(uri "${KIPRJMOD}/RF Board-rescue.lib")(options "")(descr ""))
+)
