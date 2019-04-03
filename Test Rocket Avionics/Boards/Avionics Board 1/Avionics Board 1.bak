@@ -1,39 +1,6 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:switches
-LIBS:relays
-LIBS:motors
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:FoxWestern
+EESchema Schematic File Version 4
 LIBS:Avionics Board 1-cache
-EELAYER 25 0
+EELAYER 29 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
@@ -48,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L ATSAMD21G18 U3
+L Avionics-Board-1-rescue:ATSAMD21G18 U3
 U 1 1 5C4D5029
 P 4350 5500
 F 0 "U3" H 5500 4150 60  0000 C CNN
@@ -59,7 +26,7 @@ F 3 "" H 4350 5500 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C7
+L Avionics-Board-1-rescue:C C7
 U 1 1 5C4D506A
 P 4600 4650
 F 0 "C7" H 4625 4750 50  0000 L CNN
@@ -72,7 +39,7 @@ $EndComp
 Wire Wire Line
 	4600 4800 4600 4950
 $Comp
-L +3.3V #PWR01
+L Avionics-Board-1-rescue:+3.3V #PWR01
 U 1 1 5C4D50F9
 P 4500 4950
 F 0 "#PWR01" H 4500 4800 50  0001 C CNN
@@ -87,9 +54,9 @@ Wire Wire Line
 Wire Wire Line
 	4700 4450 4600 4450
 Wire Wire Line
-	4600 4400 4600 4500
+	4600 4400 4600 4450
 $Comp
-L GND #PWR02
+L Avionics-Board-1-rescue:GND #PWR02
 U 1 1 5C4D516D
 P 4600 4400
 F 0 "#PWR02" H 4600 4150 50  0001 C CNN
@@ -105,7 +72,7 @@ OSC1
 Text Label 3600 5550 2    60   ~ 0
 OSC2
 $Comp
-L C C4
+L Avionics-Board-1-rescue:C C4
 U 1 1 5C4D51F4
 P 3200 5750
 F 0 "C4" H 3225 5850 50  0000 L CNN
@@ -118,7 +85,7 @@ $EndComp
 Wire Wire Line
 	3350 5750 3600 5750
 $Comp
-L GND #PWR03
+L Avionics-Board-1-rescue:GND #PWR03
 U 1 1 5C4D5259
 P 3000 5750
 F 0 "#PWR03" H 3000 5500 50  0001 C CNN
@@ -131,7 +98,7 @@ $EndComp
 Wire Wire Line
 	3000 5750 3050 5750
 $Comp
-L +3.3V #PWR04
+L Avionics-Board-1-rescue:+3.3V #PWR04
 U 1 1 5C4D5291
 P 3550 5950
 F 0 "#PWR04" H 3550 5800 50  0001 C CNN
@@ -148,7 +115,7 @@ Wire Wire Line
 Wire Wire Line
 	3050 5850 3050 5750
 $Comp
-L +3.3V #PWR05
+L Avionics-Board-1-rescue:+3.3V #PWR05
 U 1 1 5C4D5400
 P 4500 7150
 F 0 "#PWR05" H 4500 7000 50  0001 C CNN
@@ -161,7 +128,7 @@ $EndComp
 Wire Wire Line
 	4500 7150 4500 7000
 $Comp
-L GND #PWR06
+L Avionics-Board-1-rescue:GND #PWR06
 U 1 1 5C4D5422
 P 4600 7300
 F 0 "#PWR06" H 4600 7050 50  0001 C CNN
@@ -174,7 +141,7 @@ $EndComp
 Wire Wire Line
 	4600 7300 4600 7000
 $Comp
-L GND #PWR07
+L Avionics-Board-1-rescue:GND #PWR07
 U 1 1 5C4D548E
 P 6000 5550
 F 0 "#PWR07" H 6000 5300 50  0001 C CNN
@@ -187,7 +154,7 @@ $EndComp
 Wire Wire Line
 	5700 5550 6000 5550
 $Comp
-L +3.3V #PWR08
+L Avionics-Board-1-rescue:+3.3V #PWR08
 U 1 1 5C4D5508
 P 5900 5400
 F 0 "#PWR08" H 5900 5250 50  0001 C CNN
@@ -202,7 +169,7 @@ Wire Wire Line
 Wire Wire Line
 	5900 5450 5700 5450
 $Comp
-L MCP73831 U4
+L Avionics-Board-1-rescue:MCP73831 U4
 U 1 1 5C4D5646
 P 6800 1400
 F 0 "U4" H 7000 1200 60  0000 C CNN
@@ -213,7 +180,7 @@ F 3 "" H 6450 1200 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L USB_A J1
+L Avionics-Board-1-rescue:USB_A J1
 U 1 1 5C4D56CF
 P 950 1250
 F 0 "J1" H 750 1700 50  0000 L CNN
@@ -224,7 +191,7 @@ F 3 "" H 1100 1200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L D_Schottky D1
+L Avionics-Board-1-rescue:D_Schottky D1
 U 1 1 5C4D57D2
 P 2700 1150
 F 0 "D1" H 2700 1250 50  0000 C CNN
@@ -235,9 +202,9 @@ F 3 "" H 2700 1150 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	5350 1300 6350 1300
+	5350 1300 5700 1300
 $Comp
-L LED D2
+L Avionics-Board-1-rescue:LED D2
 U 1 1 5C4D58CF
 P 5700 1550
 F 0 "D2" H 5700 1650 50  0000 C CNN
@@ -248,7 +215,7 @@ F 3 "" H 5700 1550 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R R3
+L Avionics-Board-1-rescue:R R3
 U 1 1 5C4D5902
 P 5900 1800
 F 0 "R3" V 5980 1800 50  0000 C CNN
@@ -261,7 +228,7 @@ $EndComp
 Wire Wire Line
 	5700 1800 5700 1700
 $Comp
-L GND #PWR09
+L Avionics-Board-1-rescue:GND #PWR09
 U 1 1 5C4D5982
 P 7300 1550
 F 0 "#PWR09" H 7300 1300 50  0001 C CNN
@@ -280,7 +247,7 @@ USB_D+
 Text Label 5700 5750 0    60   ~ 0
 USB_D-
 $Comp
-L C C9
+L Avionics-Board-1-rescue:C C9
 U 1 1 5C4D615D
 P 5350 1550
 F 0 "C9" H 5375 1650 50  0000 L CNN
@@ -304,7 +271,7 @@ Wire Wire Line
 Wire Wire Line
 	7300 1500 7250 1500
 $Comp
-L R R9
+L Avionics-Board-1-rescue:R R9
 U 1 1 5C4D648C
 P 7450 1600
 F 0 "R9" V 7530 1600 50  0000 C CNN
@@ -319,7 +286,7 @@ Wire Wire Line
 Wire Wire Line
 	7450 1400 7250 1400
 $Comp
-L GND #PWR010
+L Avionics-Board-1-rescue:GND #PWR010
 U 1 1 5C4D65E3
 P 7450 1750
 F 0 "#PWR010" H 7450 1500 50  0001 C CNN
@@ -330,7 +297,7 @@ F 3 "" H 7450 1750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C13
+L Avionics-Board-1-rescue:C C13
 U 1 1 5C4D6674
 P 7750 1500
 F 0 "C13" H 7775 1600 50  0000 L CNN
@@ -341,12 +308,12 @@ F 3 "" H 7750 1500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7750 1250 7750 1350
+	7750 1250 7750 1300
 Wire Wire Line
 	7750 1300 7250 1300
 Connection ~ 7750 1300
 $Comp
-L GND #PWR011
+L Avionics-Board-1-rescue:GND #PWR011
 U 1 1 5C4D6788
 P 7750 1750
 F 0 "#PWR011" H 7750 1500 50  0001 C CNN
@@ -359,7 +326,7 @@ $EndComp
 Wire Wire Line
 	7750 1750 7750 1650
 $Comp
-L GND #PWR012
+L Avionics-Board-1-rescue:GND #PWR012
 U 1 1 5C4D6A49
 P 950 1750
 F 0 "#PWR012" H 950 1500 50  0001 C CNN
@@ -374,7 +341,7 @@ Wire Wire Line
 Wire Wire Line
 	950  1650 850  1650
 $Comp
-L GND #PWR013
+L Avionics-Board-1-rescue:GND #PWR013
 U 1 1 5C4D6C75
 P 5350 1700
 F 0 "#PWR013" H 5350 1450 50  0001 C CNN
@@ -385,7 +352,7 @@ F 3 "" H 5350 1700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +BATT #PWR014
+L Avionics-Board-1-rescue:+BATT #PWR014
 U 1 1 5C4D7394
 P 7750 1250
 F 0 "#PWR014" H 7750 1100 50  0001 C CNN
@@ -396,9 +363,9 @@ F 3 "" H 7750 1250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5350 1200 5350 1400
+	5350 1200 5350 1300
 $Comp
-L VBUS #PWR015
+L Avionics-Board-1-rescue:VBUS #PWR015
 U 1 1 5C4CBE65
 P 5350 1200
 F 0 "#PWR015" H 5350 1050 50  0001 C CNN
@@ -410,7 +377,7 @@ F 3 "" H 5350 1200 50  0001 C CNN
 $EndComp
 Connection ~ 5350 1300
 $Comp
-L VBUS #PWR016
+L Avionics-Board-1-rescue:VBUS #PWR016
 U 1 1 5C4CBF8D
 P 1300 950
 F 0 "#PWR016" H 1300 800 50  0001 C CNN
@@ -425,7 +392,7 @@ Wire Wire Line
 Wire Wire Line
 	1300 1050 1250 1050
 $Comp
-L +BATT #PWR017
+L Avionics-Board-1-rescue:+BATT #PWR017
 U 1 1 5C4CC045
 P 2700 950
 F 0 "#PWR017" H 2700 800 50  0001 C CNN
@@ -436,7 +403,7 @@ F 3 "" H 2700 950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L VBUS #PWR018
+L Avionics-Board-1-rescue:VBUS #PWR018
 U 1 1 5C4CC0F0
 P 2400 950
 F 0 "#PWR018" H 2400 800 50  0001 C CNN
@@ -451,12 +418,12 @@ Wire Wire Line
 Wire Wire Line
 	2400 950  2400 1350
 Wire Wire Line
-	2400 1350 3500 1350
+	2400 1350 2700 1350
 Wire Wire Line
-	2700 1300 2700 1400
+	2700 1300 2700 1350
 Connection ~ 2700 1350
 $Comp
-L C C3
+L Avionics-Board-1-rescue:C C3
 U 1 1 5C4CC1B6
 P 2700 1550
 F 0 "C3" H 2725 1650 50  0000 L CNN
@@ -467,7 +434,7 @@ F 3 "" H 2700 1550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR019
+L Avionics-Board-1-rescue:GND #PWR019
 U 1 1 5C4CC281
 P 2700 1750
 F 0 "#PWR019" H 2700 1500 50  0001 C CNN
@@ -480,7 +447,7 @@ $EndComp
 Wire Wire Line
 	2700 1750 2700 1700
 $Comp
-L SPX3819M5-L-3-3 U2
+L Avionics-Board-1-rescue:SPX3819M5-L-3-3 U2
 U 1 1 5C4CC2F0
 P 3800 1450
 F 0 "U2" H 3650 1675 50  0000 C CNN
@@ -491,7 +458,7 @@ F 3 "" H 3800 1450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R1
+L Avionics-Board-1-rescue:R R1
 U 1 1 5C4CC3F3
 P 3300 1450
 F 0 "R1" V 3380 1450 50  0000 C CNN
@@ -507,7 +474,7 @@ Wire Wire Line
 	3150 1450 3150 1350
 Connection ~ 3150 1350
 $Comp
-L GND #PWR020
+L Avionics-Board-1-rescue:GND #PWR020
 U 1 1 5C4CC50D
 P 3800 1800
 F 0 "#PWR020" H 3800 1550 50  0001 C CNN
@@ -521,7 +488,7 @@ Wire Wire Line
 	3800 1800 3800 1750
 NoConn ~ 4100 1450
 $Comp
-L C C5
+L Avionics-Board-1-rescue:C C5
 U 1 1 5C4CC58C
 P 4300 1550
 F 0 "C5" H 4325 1650 50  0000 L CNN
@@ -532,7 +499,7 @@ F 3 "" H 4300 1550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C8
+L Avionics-Board-1-rescue:C C8
 U 1 1 5C4CC629
 P 4650 1550
 F 0 "C8" H 4675 1650 50  0000 L CNN
@@ -543,7 +510,7 @@ F 3 "" H 4650 1550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR021
+L Avionics-Board-1-rescue:GND #PWR021
 U 1 1 5C4CC661
 P 4300 1800
 F 0 "#PWR021" H 4300 1550 50  0001 C CNN
@@ -554,7 +521,7 @@ F 3 "" H 4300 1800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR022
+L Avionics-Board-1-rescue:GND #PWR022
 U 1 1 5C4CC6A3
 P 4650 1800
 F 0 "#PWR022" H 4650 1550 50  0001 C CNN
@@ -569,14 +536,14 @@ Wire Wire Line
 Wire Wire Line
 	4300 1700 4300 1800
 Wire Wire Line
-	4100 1350 4650 1350
+	4100 1350 4300 1350
 Wire Wire Line
 	4300 1350 4300 1400
 Wire Wire Line
-	4650 1300 4650 1400
+	4650 1300 4650 1350
 Connection ~ 4300 1350
 $Comp
-L +3.3V #PWR023
+L Avionics-Board-1-rescue:+3.3V #PWR023
 U 1 1 5C4CC85E
 P 4650 1300
 F 0 "#PWR023" H 4650 1150 50  0001 C CNN
@@ -588,7 +555,7 @@ F 3 "" H 4650 1300 50  0001 C CNN
 $EndComp
 Connection ~ 4650 1350
 $Comp
-L +BATT #PWR024
+L Avionics-Board-1-rescue:+BATT #PWR024
 U 1 1 5C4CD437
 P 1900 950
 F 0 "#PWR024" H 1900 800 50  0001 C CNN
@@ -599,7 +566,7 @@ F 3 "" H 1900 950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR025
+L Avionics-Board-1-rescue:GND #PWR025
 U 1 1 5C4CD46B
 P 1900 1450
 F 0 "#PWR025" H 1900 1200 50  0001 C CNN
@@ -610,7 +577,7 @@ F 3 "" H 1900 1450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Conn_01x02 J2
+L Avionics-Board-1-rescue:Conn_01x02 J2
 U 1 1 5C4CD4BF
 P 2100 1150
 F 0 "J2" H 2100 1250 50  0000 C CNN
@@ -625,7 +592,7 @@ Wire Wire Line
 Wire Wire Line
 	1900 1150 1900 950 
 $Comp
-L R R12
+L Avionics-Board-1-rescue:R R12
 U 1 1 5C4CF3BE
 P 8900 1250
 F 0 "R12" V 8980 1250 50  0000 C CNN
@@ -636,7 +603,7 @@ F 3 "" H 8900 1250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R13
+L Avionics-Board-1-rescue:R R13
 U 1 1 5C4CF443
 P 8900 1650
 F 0 "R13" V 8980 1650 50  0000 C CNN
@@ -647,9 +614,9 @@ F 3 "" H 8900 1650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8900 1400 8900 1500
+	8900 1400 8900 1450
 $Comp
-L GND #PWR026
+L Avionics-Board-1-rescue:GND #PWR026
 U 1 1 5C4CF530
 P 8900 1850
 F 0 "#PWR026" H 8900 1600 50  0001 C CNN
@@ -680,7 +647,7 @@ BATTERY_VOLTAGE
 Wire Wire Line
 	3350 5650 3600 5650
 $Comp
-L +BATT #PWR027
+L Avionics-Board-1-rescue:+BATT #PWR027
 U 1 1 5C4CFE62
 P 8900 1050
 F 0 "#PWR027" H 8900 900 50  0001 C CNN
@@ -698,7 +665,7 @@ Wire Wire Line
 	8800 1450 8900 1450
 Connection ~ 8900 1450
 $Comp
-L ECS-.327-12.5-17X-TR U1
+L Avionics-Board-1-rescue:ECS-.327-12.5-17X-TR U1
 U 1 1 5C4D0C1A
 P 1400 3750
 F 0 "U1" V 1050 3500 60  0000 C CNN
@@ -709,7 +676,7 @@ F 3 "" H 1400 3750 60  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L C C1
+L Avionics-Board-1-rescue:C C1
 U 1 1 5C4D0E8A
 P 1200 4600
 F 0 "C1" H 1225 4700 50  0000 L CNN
@@ -720,7 +687,7 @@ F 3 "" H 1200 4600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C2
+L Avionics-Board-1-rescue:C C2
 U 1 1 5C4D0EEC
 P 1650 4600
 F 0 "C2" H 1675 4700 50  0000 L CNN
@@ -741,11 +708,11 @@ Wire Wire Line
 Wire Wire Line
 	1200 4750 1200 4850
 Wire Wire Line
-	1200 4850 1650 4850
+	1200 4850 1400 4850
 Wire Wire Line
 	1650 4850 1650 4750
 $Comp
-L GND #PWR028
+L Avionics-Board-1-rescue:GND #PWR028
 U 1 1 5C4D1096
 P 1400 4950
 F 0 "#PWR028" H 1400 4700 50  0001 C CNN
@@ -840,7 +807,7 @@ LORA_INTERRUPT
 Text Label 3200 6550 2    60   ~ 0
 RADIO_CS
 $Comp
-L BNO055 U7
+L Avionics-Board-1-rescue:BNO055 U7
 U 1 1 5C4D6FC8
 P 10100 5750
 F 0 "U7" H 10800 5150 60  0000 C CNN
@@ -855,7 +822,7 @@ SCL
 Text Label 9600 6550 3    60   ~ 0
 SDA
 $Comp
-L GND #PWR029
+L Avionics-Board-1-rescue:GND #PWR029
 U 1 1 5C4D72DF
 P 9600 4900
 F 0 "#PWR029" H 9600 4650 50  0001 C CNN
@@ -876,7 +843,7 @@ BNO_OSC_IN
 Text Label 10200 6550 3    60   ~ 0
 BNO_OSC_OUT
 $Comp
-L C C16
+L Avionics-Board-1-rescue:C C16
 U 1 1 5C4D7641
 P 10250 7450
 F 0 "C16" H 10275 7550 50  0000 L CNN
@@ -887,7 +854,7 @@ F 3 "" H 10250 7450 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L C C17
+L Avionics-Board-1-rescue:C C17
 U 1 1 5C4D76D9
 P 10250 7700
 F 0 "C17" H 10275 7800 50  0000 L CNN
@@ -898,13 +865,13 @@ F 3 "" H 10250 7700 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	10100 6550 10100 7800
+	10100 6550 10100 7450
 Connection ~ 10100 7450
 Wire Wire Line
-	10400 6550 10400 7700
+	10400 6550 10400 7450
 Connection ~ 10400 7450
 $Comp
-L +3.3V #PWR030
+L Avionics-Board-1-rescue:+3.3V #PWR030
 U 1 1 5C4D8599
 P 10400 7700
 F 0 "#PWR030" H 10400 7550 50  0001 C CNN
@@ -915,7 +882,7 @@ F 3 "" H 10400 7700 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR031
+L Avionics-Board-1-rescue:GND #PWR031
 U 1 1 5C4D85E7
 P 10100 7800
 F 0 "#PWR031" H 10100 7550 50  0001 C CNN
@@ -928,7 +895,7 @@ $EndComp
 Connection ~ 10100 7700
 NoConn ~ 10500 6550
 $Comp
-L +3.3V #PWR032
+L Avionics-Board-1-rescue:+3.3V #PWR032
 U 1 1 5C4D9F16
 P 11350 5700
 F 0 "#PWR032" H 11350 5550 50  0001 C CNN
@@ -939,7 +906,7 @@ F 3 "" H 11350 5700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R16
+L Avionics-Board-1-rescue:R R16
 U 1 1 5C4D9F62
 P 11050 5700
 F 0 "R16" V 11130 5700 50  0000 C CNN
@@ -952,14 +919,14 @@ $EndComp
 Wire Wire Line
 	10850 5700 10900 5700
 Wire Wire Line
-	10850 5800 11350 5800
+	10850 5800 11200 5800
 Wire Wire Line
 	11350 5800 11350 5700
 Wire Wire Line
 	11200 5700 11200 5800
 Connection ~ 11200 5800
 $Comp
-L GND #PWR033
+L Avionics-Board-1-rescue:GND #PWR033
 U 1 1 5C4DA377
 P 10900 5950
 F 0 "#PWR033" H 10900 5700 50  0001 C CNN
@@ -974,7 +941,7 @@ Wire Wire Line
 Wire Wire Line
 	10900 5900 10850 5900
 $Comp
-L GND #PWR034
+L Avionics-Board-1-rescue:GND #PWR034
 U 1 1 5C4DA6A5
 P 10900 5550
 F 0 "#PWR034" H 10900 5300 50  0001 C CNN
@@ -989,7 +956,7 @@ Wire Wire Line
 Wire Wire Line
 	10900 5600 10850 5600
 $Comp
-L C C15
+L Avionics-Board-1-rescue:C C15
 U 1 1 5C4DB080
 P 10200 4700
 F 0 "C15" H 10225 4800 50  0000 L CNN
@@ -1002,13 +969,13 @@ $EndComp
 Wire Wire Line
 	10200 4850 10200 5000
 Wire Wire Line
-	10500 4400 10500 5000
+	10500 4400 10500 4450
 Wire Wire Line
 	10500 4450 10200 4450
 Wire Wire Line
 	10200 4450 10200 4550
 $Comp
-L GND #PWR035
+L Avionics-Board-1-rescue:GND #PWR035
 U 1 1 5C4DB4B6
 P 10500 4400
 F 0 "#PWR035" H 10500 4150 50  0001 C CNN
@@ -1026,7 +993,7 @@ NoConn ~ 9700 5000
 NoConn ~ 9800 5000
 NoConn ~ 9900 5000
 $Comp
-L R R15
+L Avionics-Board-1-rescue:R R15
 U 1 1 5C4DB9C1
 P 10000 4700
 F 0 "R15" V 10080 4700 50  0000 C CNN
@@ -1039,7 +1006,7 @@ $EndComp
 Wire Wire Line
 	10000 4850 10000 5000
 $Comp
-L GND #PWR036
+L Avionics-Board-1-rescue:GND #PWR036
 U 1 1 5C4DBAF1
 P 10000 4450
 F 0 "#PWR036" H 10000 4200 50  0001 C CNN
@@ -1052,7 +1019,7 @@ $EndComp
 Wire Wire Line
 	10000 4450 10000 4550
 $Comp
-L GND #PWR037
+L Avionics-Board-1-rescue:GND #PWR037
 U 1 1 5C4DC103
 P 8850 5900
 F 0 "#PWR037" H 8850 5650 50  0001 C CNN
@@ -1063,14 +1030,14 @@ F 3 "" H 8850 5900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8850 5600 8850 5900
+	8850 5600 8850 5700
 Wire Wire Line
 	8850 5800 9250 5800
 Wire Wire Line
 	9250 5600 8850 5600
 Connection ~ 8850 5800
 $Comp
-L R R14
+L Avionics-Board-1-rescue:R R14
 U 1 1 5C4DC270
 P 9050 5700
 F 0 "R14" V 9130 5700 50  0000 C CNN
@@ -1086,7 +1053,7 @@ Wire Wire Line
 	8900 5700 8850 5700
 Connection ~ 8850 5700
 $Comp
-L ECS-.327-12.5-17X-TR U8
+L Avionics-Board-1-rescue:ECS-.327-12.5-17X-TR U8
 U 1 1 5C4DD7A7
 P 12000 6400
 F 0 "U8" V 11650 6150 60  0000 C CNN
@@ -1097,7 +1064,7 @@ F 3 "" H 12000 6400 60  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L C C18
+L Avionics-Board-1-rescue:C C18
 U 1 1 5C4DD7AD
 P 11800 7250
 F 0 "C18" H 11825 7350 50  0000 L CNN
@@ -1108,7 +1075,7 @@ F 3 "" H 11800 7250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C19
+L Avionics-Board-1-rescue:C C19
 U 1 1 5C4DD7B3
 P 12250 7250
 F 0 "C19" H 12275 7350 50  0000 L CNN
@@ -1129,11 +1096,11 @@ Wire Wire Line
 Wire Wire Line
 	11800 7400 11800 7500
 Wire Wire Line
-	11800 7500 12250 7500
+	11800 7500 12000 7500
 Wire Wire Line
 	12250 7500 12250 7400
 $Comp
-L GND #PWR038
+L Avionics-Board-1-rescue:GND #PWR038
 U 1 1 5C4DD7C0
 P 12000 7600
 F 0 "#PWR038" H 12000 7350 50  0001 C CNN
@@ -1151,7 +1118,7 @@ BNO_OSC_OUT
 Text Label 12250 6950 0    60   ~ 0
 BNO_OSC_IN
 $Comp
-L LED D3
+L Avionics-Board-1-rescue:LED D3
 U 1 1 5C4E1AA1
 P 6150 9200
 F 0 "D3" H 6150 9300 50  0000 C CNN
@@ -1162,7 +1129,7 @@ F 3 "" H 6150 9200 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L LED D4
+L Avionics-Board-1-rescue:LED D4
 U 1 1 5C4E1B4A
 P 6400 9200
 F 0 "D4" H 6400 9300 50  0000 C CNN
@@ -1173,7 +1140,7 @@ F 3 "" H 6400 9200 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L LED D5
+L Avionics-Board-1-rescue:LED D5
 U 1 1 5C4E1BDB
 P 6650 9200
 F 0 "D5" H 6650 9300 50  0000 C CNN
@@ -1184,7 +1151,7 @@ F 3 "" H 6650 9200 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R R4
+L Avionics-Board-1-rescue:R R4
 U 1 1 5C4E1CA9
 P 6150 9600
 F 0 "R4" V 6230 9600 50  0000 C CNN
@@ -1195,7 +1162,7 @@ F 3 "" H 6150 9600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R5
+L Avionics-Board-1-rescue:R R5
 U 1 1 5C4E1D63
 P 6400 9600
 F 0 "R5" V 6480 9600 50  0000 C CNN
@@ -1206,7 +1173,7 @@ F 3 "" H 6400 9600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R6
+L Avionics-Board-1-rescue:R R6
 U 1 1 5C4E2022
 P 6650 9600
 F 0 "R6" V 6730 9600 50  0000 C CNN
@@ -1223,7 +1190,7 @@ Wire Wire Line
 Wire Wire Line
 	6650 9350 6650 9450
 $Comp
-L GND #PWR039
+L Avionics-Board-1-rescue:GND #PWR039
 U 1 1 5C4E22B9
 P 6400 9850
 F 0 "#PWR039" H 6400 9600 50  0001 C CNN
@@ -1236,9 +1203,9 @@ $EndComp
 Wire Wire Line
 	6150 9750 6150 9800
 Wire Wire Line
-	6150 9800 6650 9800
+	6150 9800 6400 9800
 Wire Wire Line
-	6400 9750 6400 9850
+	6400 9750 6400 9800
 Connection ~ 6400 9800
 Wire Wire Line
 	6650 9800 6650 9750
@@ -1249,7 +1216,7 @@ D6
 Text Label 6650 9050 1    60   ~ 0
 D7
 $Comp
-L Conn_01x01 J10
+L Avionics-Board-1-rescue:Conn_01x01 J10
 U 1 1 5C4E4C2D
 P 10900 8500
 F 0 "J10" H 10900 8600 50  0000 C CNN
@@ -1260,7 +1227,7 @@ F 3 "" H 10900 8500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Conn_01x01 J11
+L Avionics-Board-1-rescue:Conn_01x01 J11
 U 1 1 5C4E53E1
 P 10900 8800
 F 0 "J11" H 10900 8900 50  0000 C CNN
@@ -1271,7 +1238,7 @@ F 3 "" H 10900 8800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Conn_01x01 J12
+L Avionics-Board-1-rescue:Conn_01x01 J12
 U 1 1 5C4E548D
 P 10900 9100
 F 0 "J12" H 10900 9200 50  0000 C CNN
@@ -1282,7 +1249,7 @@ F 3 "" H 10900 9100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Conn_01x01 J13
+L Avionics-Board-1-rescue:Conn_01x01 J13
 U 1 1 5C4E553E
 P 10900 9400
 F 0 "J13" H 10900 9500 50  0000 C CNN
@@ -1293,7 +1260,7 @@ F 3 "" H 10900 9400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR040
+L Avionics-Board-1-rescue:GND #PWR040
 U 1 1 5C4E55C0
 P 10550 9550
 F 0 "#PWR040" H 10550 9300 50  0001 C CNN
@@ -1304,7 +1271,7 @@ F 3 "" H 10550 9550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10550 8500 10550 9550
+	10550 8500 10550 8800
 Wire Wire Line
 	10550 9400 10700 9400
 Wire Wire Line
@@ -1319,7 +1286,7 @@ Connection ~ 10550 8800
 Wire Wire Line
 	4200 4950 4200 4450
 $Comp
-L Buzzer BZ1
+L Avionics-Board-1-rescue:Buzzer BZ1
 U 1 1 5C4E6BB4
 P 4300 2850
 F 0 "BZ1" H 4450 2900 50  0000 L CNN
@@ -1334,7 +1301,7 @@ BUZZER
 Text Label 4200 3600 3    60   ~ 0
 BUZZER
 $Comp
-L R R2
+L Avionics-Board-1-rescue:R R2
 U 1 1 5C4E74E9
 P 4200 3400
 F 0 "R2" V 4280 3400 50  0000 C CNN
@@ -1351,7 +1318,7 @@ Wire Wire Line
 Wire Wire Line
 	4400 2950 4400 3050
 $Comp
-L GND #PWR041
+L Avionics-Board-1-rescue:GND #PWR041
 U 1 1 5C4E8153
 P 4400 3050
 F 0 "#PWR041" H 4400 2800 50  0001 C CNN
@@ -1362,7 +1329,7 @@ F 3 "" H 4400 3050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MPL3115A2 U5
+L Avionics-Board-1-rescue:MPL3115A2 U5
 U 1 1 5C4EC2C6
 P 8250 4150
 F 0 "U5" H 8500 3900 60  0000 C CNN
@@ -1373,7 +1340,7 @@ F 3 "" H 8250 3750 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C10
+L Avionics-Board-1-rescue:C C10
 U 1 1 5C4F0AF7
 P 6500 4250
 F 0 "C10" H 6525 4350 50  0000 L CNN
@@ -1384,7 +1351,7 @@ F 3 "" H 6500 4250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C11
+L Avionics-Board-1-rescue:C C11
 U 1 1 5C4F0BD7
 P 6750 4250
 F 0 "C11" H 6775 4350 50  0000 L CNN
@@ -1395,7 +1362,7 @@ F 3 "" H 6750 4250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C12
+L Avionics-Board-1-rescue:C C12
 U 1 1 5C4F0C9B
 P 7000 4250
 F 0 "C12" H 7025 4350 50  0000 L CNN
@@ -1406,13 +1373,13 @@ F 3 "" H 7000 4250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6500 4000 7750 4000
+	6500 4000 6750 4000
 Wire Wire Line
 	6750 4000 6750 4100
 Wire Wire Line
 	7000 4100 7750 4100
 Wire Wire Line
-	6500 3900 6500 4100
+	6500 3900 6500 4000
 Connection ~ 6750 4000
 Wire Wire Line
 	7750 4300 7550 4300
@@ -1424,17 +1391,17 @@ Wire Wire Line
 Wire Wire Line
 	7300 4200 7300 4450
 Wire Wire Line
-	7300 4450 6500 4450
+	7300 4450 7000 4450
 Wire Wire Line
 	7000 4450 7000 4400
 Wire Wire Line
 	6750 4450 6750 4400
 Connection ~ 7000 4450
 Wire Wire Line
-	6500 4400 6500 4550
+	6500 4400 6500 4450
 Connection ~ 6750 4450
 $Comp
-L GND #PWR042
+L Avionics-Board-1-rescue:GND #PWR042
 U 1 1 5C4F1901
 P 6500 4550
 F 0 "#PWR042" H 6500 4300 50  0001 C CNN
@@ -1446,7 +1413,7 @@ F 3 "" H 6500 4550 50  0001 C CNN
 $EndComp
 Connection ~ 6500 4450
 $Comp
-L +3.3V #PWR043
+L Avionics-Board-1-rescue:+3.3V #PWR043
 U 1 1 5C4F1A78
 P 6500 3900
 F 0 "#PWR043" H 6500 3750 50  0001 C CNN
@@ -1464,7 +1431,7 @@ SDA
 NoConn ~ 8750 4200
 NoConn ~ 8750 4300
 $Comp
-L R R7
+L Avionics-Board-1-rescue:R R7
 U 1 1 5C4F4F31
 P 7000 5350
 F 0 "R7" V 7080 5350 50  0000 C CNN
@@ -1475,7 +1442,7 @@ F 3 "" H 7000 5350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R8
+L Avionics-Board-1-rescue:R R8
 U 1 1 5C4F503A
 P 7200 5350
 F 0 "R8" V 7280 5350 50  0000 C CNN
@@ -1486,7 +1453,7 @@ F 3 "" H 7200 5350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3.3V #PWR044
+L Avionics-Board-1-rescue:+3.3V #PWR044
 U 1 1 5C4F52CD
 P 7100 5100
 F 0 "#PWR044" H 7100 4950 50  0001 C CNN
@@ -1499,7 +1466,7 @@ $EndComp
 Wire Wire Line
 	7100 5100 7100 5150
 Wire Wire Line
-	7000 5150 7200 5150
+	7000 5150 7100 5150
 Wire Wire Line
 	7000 5150 7000 5200
 Wire Wire Line
@@ -1516,7 +1483,7 @@ SWDIO
 Text Label 1700 9450 1    60   ~ 0
 SWCLK
 $Comp
-L +3.3V #PWR045
+L Avionics-Board-1-rescue:+3.3V #PWR045
 U 1 1 5C4FAC8D
 P 2700 10150
 F 0 "#PWR045" H 2700 10000 50  0001 C CNN
@@ -1537,7 +1504,7 @@ MAX_M8_TX
 Text Label 2100 9950 3    60   ~ 0
 MAX_M8_RX
 $Comp
-L GND #PWR046
+L Avionics-Board-1-rescue:GND #PWR046
 U 1 1 5C4FE25A
 P 2300 10100
 F 0 "#PWR046" H 2300 9850 50  0001 C CNN
@@ -1548,7 +1515,7 @@ F 3 "" H 2300 10100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Conn_01x02 J14
+L Avionics-Board-1-rescue:Conn_01x02 J14
 U 1 1 5C5013D4
 P 2200 2050
 F 0 "J14" H 2200 2150 50  0000 C CNN
@@ -1559,7 +1526,7 @@ F 3 "" H 2200 2050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +BATT #PWR047
+L Avionics-Board-1-rescue:+BATT #PWR047
 U 1 1 5C501502
 P 1950 2000
 F 0 "#PWR047" H 1950 1850 50  0001 C CNN
@@ -1574,7 +1541,7 @@ Wire Wire Line
 Wire Wire Line
 	1950 2050 2000 2050
 $Comp
-L GND #PWR048
+L Avionics-Board-1-rescue:GND #PWR048
 U 1 1 5C5016D6
 P 1950 2200
 F 0 "#PWR048" H 1950 1950 50  0001 C CNN
@@ -1589,7 +1556,7 @@ Wire Wire Line
 Wire Wire Line
 	1950 2150 2000 2150
 $Comp
-L GND #PWR049
+L Avionics-Board-1-rescue:GND #PWR049
 U 1 1 5C7130A4
 P 2000 9950
 F 0 "#PWR049" H 2000 9700 50  0001 C CNN
@@ -1600,7 +1567,7 @@ F 3 "" H 2000 9950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR050
+L Avionics-Board-1-rescue:GND #PWR050
 U 1 1 5C713157
 P 2000 9450
 F 0 "#PWR050" H 2000 9200 50  0001 C CNN
@@ -1625,24 +1592,24 @@ RADIO_CS
 Text Label 2700 9450 1    60   ~ 0
 SD_CS
 Wire Wire Line
-	2700 9950 2700 10150
+	2700 9950 2700 10050
 Wire Wire Line
 	2600 9950 2600 10050
 Wire Wire Line
 	2600 10050 2700 10050
 Connection ~ 2700 10050
 Wire Wire Line
-	2300 9950 2300 10100
+	2300 9950 2300 10000
 Wire Wire Line
 	2400 9950 2400 10000
 Wire Wire Line
-	2300 10000 2500 10000
+	2300 10000 2400 10000
 Connection ~ 2300 10000
 Wire Wire Line
 	2500 10000 2500 9950
 Connection ~ 2400 10000
 $Comp
-L Conn_02x12_Odd_Even J3
+L Avionics-Board-1-rescue:Conn_02x12_Odd_Even J3
 U 1 1 5C722513
 P 2200 9750
 F 0 "J3" H 2250 10350 50  0000 C CNN
@@ -1657,7 +1624,7 @@ SCL
 Text Label 2800 9950 3    60   ~ 0
 SDA
 $Comp
-L USB_A J4
+L Avionics-Board-1-rescue:USB_A J4
 U 1 1 5C7248AC
 P 1000 2600
 F 0 "J4" H 800 3050 50  0000 L CNN
@@ -1672,7 +1639,7 @@ USB_D+
 Text Label 1300 2700 0    60   ~ 0
 USB_D-
 $Comp
-L GND #PWR051
+L Avionics-Board-1-rescue:GND #PWR051
 U 1 1 5C7248B4
 P 1000 3100
 F 0 "#PWR051" H 1000 2850 50  0001 C CNN
@@ -1687,7 +1654,7 @@ Wire Wire Line
 Wire Wire Line
 	1000 3000 900  3000
 $Comp
-L VBUS #PWR052
+L Avionics-Board-1-rescue:VBUS #PWR052
 U 1 1 5C7248BC
 P 1350 2300
 F 0 "#PWR052" H 1350 2150 50  0001 C CNN
@@ -1704,7 +1671,7 @@ Wire Wire Line
 Text Notes 800  3400 0    60   ~ 0
 Place this USB on underside of the board
 $Comp
-L LMR62014 U11
+L Avionics-Board-1-rescue:LMR62014 U11
 U 1 1 5C72617C
 P 11800 1500
 F 0 "U11" H 12050 1300 60  0000 C CNN
@@ -1715,7 +1682,7 @@ F 3 "https://www.digikey.com/product-detail/en/texas-instruments/LMR62014XMF-NOP
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3.3V #PWR053
+L Avionics-Board-1-rescue:+3.3V #PWR053
 U 1 1 5C726425
 P 12700 1300
 F 0 "#PWR053" H 12700 1150 50  0001 C CNN
@@ -1726,7 +1693,7 @@ F 3 "" H 12700 1300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R17
+L Avionics-Board-1-rescue:R R17
 U 1 1 5C7265E9
 P 12500 1600
 F 0 "R17" V 12580 1600 50  0000 C CNN
@@ -1739,12 +1706,12 @@ $EndComp
 Wire Wire Line
 	12350 1600 12300 1600
 Wire Wire Line
-	12300 1400 12700 1400
+	12300 1400 12400 1400
 Wire Wire Line
-	12700 1300 12700 1650
+	12700 1300 12700 1400
 Connection ~ 12700 1400
 $Comp
-L L L1
+L Avionics-Board-1-rescue:L L1
 U 1 1 5C7272E1
 P 11800 1050
 F 0 "L1" V 11750 1050 50  0000 C CNN
@@ -1764,9 +1731,9 @@ Wire Wire Line
 Wire Wire Line
 	11150 1050 11150 1400
 Wire Wire Line
-	11100 1400 11300 1400
+	11100 1400 11150 1400
 $Comp
-L D D6
+L Avionics-Board-1-rescue:D D6
 U 1 1 5C727646
 P 10950 1400
 F 0 "D6" H 10950 1500 50  0000 C CNN
@@ -1781,7 +1748,7 @@ Connection ~ 11150 1400
 Text Label 10800 1400 2    60   ~ 0
 6V_SERVO_SUPPLY
 $Comp
-L R R18
+L Avionics-Board-1-rescue:R R18
 U 1 1 5C727BAB
 P 11050 1600
 F 0 "R18" V 11130 1600 50  0000 C CNN
@@ -1792,9 +1759,9 @@ F 3 "" H 11050 1600 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	11200 1600 11300 1600
+	11200 1600 11250 1600
 $Comp
-L GND #PWR054
+L Avionics-Board-1-rescue:GND #PWR054
 U 1 1 5C727ED7
 P 11300 1500
 F 0 "#PWR054" H 11300 1250 50  0001 C CNN
@@ -1807,9 +1774,9 @@ $EndComp
 Wire Wire Line
 	10900 1600 10800 1600
 Wire Wire Line
-	10800 1400 10800 1850
+	10800 1400 10800 1600
 $Comp
-L C C20
+L Avionics-Board-1-rescue:C C20
 U 1 1 5C728090
 P 12700 1800
 F 0 "C20" H 12725 1900 50  0000 L CNN
@@ -1823,7 +1790,7 @@ Wire Wire Line
 	12700 1600 12650 1600
 Connection ~ 12700 1600
 $Comp
-L GND #PWR055
+L Avionics-Board-1-rescue:GND #PWR055
 U 1 1 5C7289CE
 P 12700 2000
 F 0 "#PWR055" H 12700 1750 50  0001 C CNN
@@ -1836,7 +1803,7 @@ $EndComp
 Wire Wire Line
 	12700 2000 12700 1950
 $Comp
-L C C6
+L Avionics-Board-1-rescue:C C6
 U 1 1 5C728FBD
 P 10800 2000
 F 0 "C6" H 10825 2100 50  0000 L CNN
@@ -1848,7 +1815,7 @@ F 3 "" H 10800 2000 50  0001 C CNN
 $EndComp
 Connection ~ 10800 1600
 $Comp
-L GND #PWR056
+L Avionics-Board-1-rescue:GND #PWR056
 U 1 1 5C72916A
 P 10800 2200
 F 0 "#PWR056" H 10800 1950 50  0001 C CNN
@@ -1861,7 +1828,7 @@ $EndComp
 Wire Wire Line
 	10800 2200 10800 2150
 $Comp
-L R R19
+L Avionics-Board-1-rescue:R R19
 U 1 1 5C7296F1
 P 11250 2050
 F 0 "R19" V 11330 2050 50  0000 C CNN
@@ -1872,10 +1839,10 @@ F 3 "" H 11250 2050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	11250 1600 11250 1900
+	11250 1600 11250 1800
 Connection ~ 11250 1600
 $Comp
-L GND #PWR057
+L Avionics-Board-1-rescue:GND #PWR057
 U 1 1 5C729941
 P 11250 2200
 F 0 "#PWR057" H 11250 1950 50  0001 C CNN
@@ -1885,10 +1852,8 @@ F 3 "" H 11250 2200 50  0001 C CNN
 	1    11250 2200
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	11250 2200 11250 2200
 $Comp
-L C C22
+L Avionics-Board-1-rescue:C C22
 U 1 1 5C72A491
 P 11050 1800
 F 0 "C22" H 11075 1900 50  0000 L CNN
@@ -1907,7 +1872,7 @@ Connection ~ 10800 1800
 Text Label 10800 2850 2    60   ~ 0
 D10
 $Comp
-L GND #PWR058
+L Avionics-Board-1-rescue:GND #PWR058
 U 1 1 5C72F5F2
 P 12400 3350
 F 0 "#PWR058" H 12400 3100 50  0001 C CNN
@@ -1918,7 +1883,7 @@ F 3 "" H 12400 3350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L NC7WZ07 U10
+L Avionics-Board-1-rescue:NC7WZ07 U10
 U 1 1 5C72FE14
 P 11400 2950
 F 0 "U10" H 11600 2750 60  0000 C CNN
@@ -1931,7 +1896,7 @@ $EndComp
 Wire Wire Line
 	12400 3050 12400 3350
 $Comp
-L +3.3V #PWR059
+L Avionics-Board-1-rescue:+3.3V #PWR059
 U 1 1 5C73047C
 P 12050 2950
 F 0 "#PWR059" H 12050 2800 50  0001 C CNN
@@ -1948,7 +1913,7 @@ Wire Wire Line
 NoConn ~ 11850 3050
 NoConn ~ 10950 3050
 $Comp
-L GND #PWR060
+L Avionics-Board-1-rescue:GND #PWR060
 U 1 1 5C730BE9
 P 10750 3050
 F 0 "#PWR060" H 10750 2800 50  0001 C CNN
@@ -1965,7 +1930,7 @@ Wire Wire Line
 Wire Wire Line
 	10800 2850 10950 2850
 $Comp
-L Conn_01x03 J5
+L Avionics-Board-1-rescue:Conn_01x03 J5
 U 1 1 5C731DE4
 P 13450 2950
 F 0 "J5" H 13450 3150 50  0000 C CNN
@@ -1979,116 +1944,88 @@ Wire Wire Line
 	12400 3050 13250 3050
 Text Label 13250 2950 2    60   ~ 0
 6V_SERVO_SUPPLY
-$Comp
-L DS3231-SO16 U6
-U 1 1 5C7360A0
-P 8250 8150
-F 0 "U6" H 8500 7700 60  0000 C CNN
-F 1 "DS3231-SO16" H 8250 8600 60  0000 C CNN
-F 2 "Housings_SOIC:SOIC-16W_7.5x10.3mm_Pitch1.27mm" H 8250 7450 60  0001 C CNN
-F 3 "" H 8250 7450 60  0001 C CNN
-	1    8250 8150
-	1    0    0    -1  
-$EndComp
-$Comp
-L R R10
-U 1 1 5C738747
-P 7500 7800
-F 0 "R10" V 7580 7800 50  0000 C CNN
-F 1 "10k" V 7500 7800 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 7430 7800 50  0001 C CNN
-F 3 "" H 7500 7800 50  0001 C CNN
-	1    7500 7800
-	0    1    1    0   
-$EndComp
-$Comp
-L R R11
-U 1 1 5C738866
-P 7500 8000
-F 0 "R11" V 7580 8000 50  0000 C CNN
-F 1 "10k" V 7500 8000 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 7430 8000 50  0001 C CNN
-F 3 "" H 7500 8000 50  0001 C CNN
-	1    7500 8000
-	0    1    1    0   
-$EndComp
 Wire Wire Line
-	7650 7800 7750 7800
+	4600 4450 4600 4500
 Wire Wire Line
-	7650 8000 7750 8000
+	5700 1300 6350 1300
 Wire Wire Line
-	7150 7900 7750 7900
+	7750 1300 7750 1350
 Wire Wire Line
-	7350 8000 7300 8000
+	5350 1300 5350 1400
 Wire Wire Line
-	7300 8000 7300 7900
-Connection ~ 7300 7900
-$Comp
-L +3.3V #PWR061
-U 1 1 5C738EB5
-P 7150 7600
-F 0 "#PWR061" H 7150 7450 50  0001 C CNN
-F 1 "+3.3V" H 7150 7740 50  0000 C CNN
-F 2 "" H 7150 7600 50  0001 C CNN
-F 3 "" H 7150 7600 50  0001 C CNN
-	1    7150 7600
-	1    0    0    -1  
-$EndComp
+	2700 1350 3150 1350
 Wire Wire Line
-	7150 7600 7150 8000
+	2700 1350 2700 1400
 Wire Wire Line
-	7150 7800 7350 7800
-$Comp
-L C C21
-U 1 1 5C73906A
-P 7150 8150
-F 0 "C21" H 7175 8250 50  0000 L CNN
-F 1 "1u" H 7175 8050 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805" H 7188 8000 50  0001 C CNN
-F 3 "" H 7150 8150 50  0001 C CNN
-	1    7150 8150
-	1    0    0    -1  
-$EndComp
-Connection ~ 7150 7900
-Connection ~ 7150 7800
-$Comp
-L GND #PWR062
-U 1 1 5C739AF9
-P 7150 8350
-F 0 "#PWR062" H 7150 8100 50  0001 C CNN
-F 1 "GND" H 7150 8200 50  0000 C CNN
-F 2 "" H 7150 8350 50  0001 C CNN
-F 3 "" H 7150 8350 50  0001 C CNN
-	1    7150 8350
-	1    0    0    -1  
-$EndComp
+	3150 1350 3500 1350
 Wire Wire Line
-	7150 8350 7150 8300
-Text Label 8750 7900 0    60   ~ 0
-SDA
-Text Label 8750 7800 0    60   ~ 0
-SCL
-$Comp
-L GND #PWR063
-U 1 1 5C73A8EF
-P 8900 8100
-F 0 "#PWR063" H 8900 7850 50  0001 C CNN
-F 1 "GND" H 8900 7950 50  0000 C CNN
-F 2 "" H 8900 8100 50  0001 C CNN
-F 3 "" H 8900 8100 50  0001 C CNN
-	1    8900 8100
-	0    -1   -1   0   
-$EndComp
+	4300 1350 4650 1350
 Wire Wire Line
-	8900 8100 8750 8100
-NoConn ~ 8750 8000
-NoConn ~ 8750 8200
-NoConn ~ 8750 8300
-NoConn ~ 8750 8400
-NoConn ~ 8750 8500
-NoConn ~ 7750 8500
-NoConn ~ 7750 8400
-NoConn ~ 7750 8300
-NoConn ~ 7750 8200
-NoConn ~ 7750 8100
+	4650 1350 4650 1400
+Wire Wire Line
+	8900 1450 8900 1500
+Wire Wire Line
+	1400 4850 1650 4850
+Wire Wire Line
+	10100 7450 10100 7700
+Wire Wire Line
+	10400 7450 10400 7700
+Wire Wire Line
+	10100 7700 10100 7800
+Wire Wire Line
+	11200 5800 11350 5800
+Wire Wire Line
+	10500 4450 10500 5000
+Wire Wire Line
+	8850 5800 8850 5900
+Wire Wire Line
+	8850 5700 8850 5800
+Wire Wire Line
+	12000 7500 12250 7500
+Wire Wire Line
+	6400 9800 6650 9800
+Wire Wire Line
+	6400 9800 6400 9850
+Wire Wire Line
+	10550 9400 10550 9550
+Wire Wire Line
+	10550 9100 10550 9400
+Wire Wire Line
+	10550 8800 10550 9100
+Wire Wire Line
+	6750 4000 7550 4000
+Wire Wire Line
+	7550 4000 7750 4000
+Wire Wire Line
+	7000 4450 6750 4450
+Wire Wire Line
+	6750 4450 6500 4450
+Wire Wire Line
+	6500 4450 6500 4550
+Wire Wire Line
+	6500 4000 6500 4100
+Wire Wire Line
+	7100 5150 7200 5150
+Wire Wire Line
+	2700 10050 2700 10150
+Wire Wire Line
+	2300 10000 2300 10100
+Wire Wire Line
+	2400 10000 2500 10000
+Wire Wire Line
+	12700 1400 12700 1600
+Wire Wire Line
+	12400 1400 12700 1400
+Wire Wire Line
+	11150 1400 11300 1400
+Wire Wire Line
+	12700 1600 12700 1650
+Wire Wire Line
+	10800 1600 10800 1800
+Wire Wire Line
+	11250 1600 11300 1600
+Wire Wire Line
+	11250 1800 11250 1900
+Wire Wire Line
+	10800 1800 10800 1850
 $EndSCHEMATC
