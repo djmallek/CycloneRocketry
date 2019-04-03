@@ -1485,23 +1485,23 @@ SWCLK
 $Comp
 L Avionics-Board-1-rescue:+3.3V #PWR045
 U 1 1 5C4FAC8D
-P 2700 10150
-F 0 "#PWR045" H 2700 10000 50  0001 C CNN
-F 1 "+3.3V" H 2700 10290 50  0000 C CNN
-F 2 "" H 2700 10150 50  0001 C CNN
-F 3 "" H 2700 10150 50  0001 C CNN
-	1    2700 10150
+P 2100 10150
+F 0 "#PWR045" H 2100 10000 50  0001 C CNN
+F 1 "+3.3V" H 2100 10290 50  0000 C CNN
+F 2 "" H 2100 10150 50  0001 C CNN
+F 3 "" H 2100 10150 50  0001 C CNN
+	1    2100 10150
 	1    0    0    1   
 $EndComp
-Text Label 1800 9950 3    60   ~ 0
-MOSI
 Text Label 1900 9950 3    60   ~ 0
+MOSI
+Text Label 1800 9950 3    60   ~ 0
 SCK
 Text Label 1700 9950 3    60   ~ 0
 MISO
-Text Label 2200 9950 3    60   ~ 0
+Text Label 2700 9950 3    60   ~ 0
 MAX_M8_TX
-Text Label 2100 9950 3    60   ~ 0
+Text Label 2600 9950 3    60   ~ 0
 MAX_M8_RX
 $Comp
 L Avionics-Board-1-rescue:GND #PWR046
@@ -1592,13 +1592,6 @@ RADIO_CS
 Text Label 2700 9450 1    60   ~ 0
 SD_CS
 Wire Wire Line
-	2700 9950 2700 10050
-Wire Wire Line
-	2600 9950 2600 10050
-Wire Wire Line
-	2600 10050 2700 10050
-Connection ~ 2700 10050
-Wire Wire Line
 	2300 9950 2300 10000
 Wire Wire Line
 	2400 9950 2400 10000
@@ -1608,18 +1601,7 @@ Connection ~ 2300 10000
 Wire Wire Line
 	2500 10000 2500 9950
 Connection ~ 2400 10000
-$Comp
-L Avionics-Board-1-rescue:Conn_02x12_Odd_Even J3
-U 1 1 5C722513
-P 2200 9750
-F 0 "J3" H 2250 10350 50  0000 C CNN
-F 1 "EXPANSION_HEADER" H 2250 9050 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_2x14_Pitch1.00mm" H 2200 9750 50  0001 C CNN
-F 3 "" H 2200 9750 50  0001 C CNN
-	1    2200 9750
-	0    -1   -1   0   
-$EndComp
-Text Label 2800 9450 1    60   ~ 0
+Text Label 2900 9950 3    60   ~ 0
 SCL
 Text Label 2800 9950 3    60   ~ 0
 SDA
@@ -2007,8 +1989,6 @@ Wire Wire Line
 Wire Wire Line
 	7100 5150 7200 5150
 Wire Wire Line
-	2700 10050 2700 10150
-Wire Wire Line
 	2300 10000 2300 10100
 Wire Wire Line
 	2400 10000 2500 10000
@@ -2029,121 +2009,27 @@ Wire Wire Line
 Wire Wire Line
 	10800 1800 10800 1850
 Wire Wire Line
-	7300 7900 7750 7900
-NoConn ~ 7750 8100
-NoConn ~ 7750 8200
-NoConn ~ 7750 8300
-NoConn ~ 7750 8400
-NoConn ~ 7750 8500
-NoConn ~ 8750 8500
-NoConn ~ 8750 8400
-NoConn ~ 8750 8300
-NoConn ~ 8750 8200
-NoConn ~ 8750 8000
+	2100 10150 2100 10050
 Wire Wire Line
-	8900 8100 8750 8100
+	2200 9950 2200 10050
+Wire Wire Line
+	2200 10050 2100 10050
+Connection ~ 2100 10050
+Wire Wire Line
+	2100 10050 2100 9950
 $Comp
-L Avionics-Board-1-rescue:GND #PWR063
-U 1 1 5C73A8EF
-P 8900 8100
-F 0 "#PWR063" H 8900 7850 50  0001 C CNN
-F 1 "GND" H 8900 7950 50  0000 C CNN
-F 2 "" H 8900 8100 50  0001 C CNN
-F 3 "" H 8900 8100 50  0001 C CNN
-	1    8900 8100
+L Connector_Generic:Conn_02x13_Odd_Even J3
+U 1 1 5CB1EFA8
+P 2300 9750
+F 0 "J3" V 2396 9062 50  0000 R CNN
+F 1 "EXPANSION_HEADER" V 2305 9062 50  0000 R CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x13_Pitch1.00mm" H 2300 9750 50  0001 C CNN
+F 3 "~" H 2300 9750 50  0001 C CNN
+	1    2300 9750
 	0    -1   -1   0   
 $EndComp
-Text Label 8750 7800 0    60   ~ 0
-SCL
-Text Label 8750 7900 0    60   ~ 0
-SDA
-Wire Wire Line
-	7150 8350 7150 8300
-$Comp
-L Avionics-Board-1-rescue:GND #PWR062
-U 1 1 5C739AF9
-P 7150 8350
-F 0 "#PWR062" H 7150 8100 50  0001 C CNN
-F 1 "GND" H 7150 8200 50  0000 C CNN
-F 2 "" H 7150 8350 50  0001 C CNN
-F 3 "" H 7150 8350 50  0001 C CNN
-	1    7150 8350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Avionics-Board-1-rescue:C C21
-U 1 1 5C73906A
-P 7150 8150
-F 0 "C21" H 7175 8250 50  0000 L CNN
-F 1 "1u" H 7175 8050 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805" H 7188 8000 50  0001 C CNN
-F 3 "" H 7150 8150 50  0001 C CNN
-	1    7150 8150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7150 7800 7350 7800
-Connection ~ 7150 7800
-Wire Wire Line
-	7150 7600 7150 7800
-$Comp
-L Avionics-Board-1-rescue:+3.3V #PWR061
-U 1 1 5C738EB5
-P 7150 7600
-F 0 "#PWR061" H 7150 7450 50  0001 C CNN
-F 1 "+3.3V" H 7150 7740 50  0000 C CNN
-F 2 "" H 7150 7600 50  0001 C CNN
-F 3 "" H 7150 7600 50  0001 C CNN
-	1    7150 7600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7300 8000 7300 7900
-Wire Wire Line
-	7350 8000 7300 8000
-Connection ~ 7300 7900
-Wire Wire Line
-	7150 7800 7150 7900
-Wire Wire Line
-	7150 7900 7150 8000
-Connection ~ 7150 7900
-Wire Wire Line
-	7150 7900 7300 7900
-Wire Wire Line
-	7650 8000 7750 8000
-Wire Wire Line
-	7650 7800 7750 7800
-$Comp
-L Avionics-Board-1-rescue:R R11
-U 1 1 5C738866
-P 7500 8000
-F 0 "R11" V 7580 8000 50  0000 C CNN
-F 1 "10k" V 7500 8000 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 7430 8000 50  0001 C CNN
-F 3 "" H 7500 8000 50  0001 C CNN
-	1    7500 8000
-	0    1    1    0   
-$EndComp
-$Comp
-L Avionics-Board-1-rescue:R R10
-U 1 1 5C738747
-P 7500 7800
-F 0 "R10" V 7580 7800 50  0000 C CNN
-F 1 "10k" V 7500 7800 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 7430 7800 50  0001 C CNN
-F 3 "" H 7500 7800 50  0001 C CNN
-	1    7500 7800
-	0    1    1    0   
-$EndComp
-$Comp
-L Avionics-Board-1-rescue:DS3231-SO16 U6
-U 1 1 5C7360A0
-P 8250 8150
-F 0 "U6" H 8500 7700 60  0000 C CNN
-F 1 "DS3231-SO16" H 8250 8600 60  0000 C CNN
-F 2 "Housings_SOIC:SOIC-16W_7.5x10.3mm_Pitch1.27mm" H 8250 7450 60  0001 C CNN
-F 3 "" H 8250 7450 60  0001 C CNN
-	1    8250 8150
-	1    0    0    -1  
-$EndComp
+Text Label 2800 9450 1    60   ~ 0
+USB_D+
+Text Label 2900 9450 1    60   ~ 0
+USB_D-
 $EndSCHEMATC
