@@ -1,6 +1,39 @@
-EESchema Schematic File Version 4
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:FoxWestern
 LIBS:AvionicsBoard-cache
-EELAYER 29 0
+EELAYER 25 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
@@ -15,7 +48,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L AvionicsBoard-rescue:BNO055 U7
+L BNO055 U7
 U 1 1 5B1B5E61
 P 12600 5850
 F 0 "U7" H 12900 5750 60  0000 C CNN
@@ -26,7 +59,7 @@ F 3 "" H 12600 5850 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AvionicsBoard-rescue:Conn_01x02 J2
+L Conn_01x02 J2
 U 1 1 5B1B6285
 P 4900 950
 F 0 "J2" H 4900 1050 50  0000 C CNN
@@ -37,7 +70,7 @@ F 3 "" H 4900 950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AvionicsBoard-rescue:GND #PWR01
+L GND #PWR01
 U 1 1 5B1B636D
 P 2200 1950
 F 0 "#PWR01" H 2200 1700 50  0001 C CNN
@@ -48,7 +81,7 @@ F 3 "" H 2200 1950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AvionicsBoard-rescue:C C6
+L C C6
 U 1 1 5B1B63DC
 P 3250 1600
 F 0 "C6" H 3275 1700 50  0000 L CNN
@@ -59,7 +92,7 @@ F 3 "" H 3250 1600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AvionicsBoard-rescue:GND #PWR02
+L GND #PWR02
 U 1 1 5B1B64D1
 P 3250 1850
 F 0 "#PWR02" H 3250 1600 50  0001 C CNN
@@ -70,7 +103,7 @@ F 3 "" H 3250 1850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AvionicsBoard-rescue:C C4
+L C C4
 U 1 1 5B1B64F3
 P 1550 1650
 F 0 "C4" H 1575 1750 50  0000 L CNN
@@ -81,7 +114,7 @@ F 3 "" H 1550 1650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AvionicsBoard-rescue:GND #PWR03
+L GND #PWR03
 U 1 1 5B1B656B
 P 1550 1900
 F 0 "#PWR03" H 1550 1650 50  0001 C CNN
@@ -100,7 +133,7 @@ SCK
 Text Label 7400 3900 2    60   ~ 0
 RADIO_CS
 $Comp
-L AvionicsBoard-rescue:GND #PWR04
+L GND #PWR04
 U 1 1 5B1B7669
 P 8900 4100
 F 0 "#PWR04" H 8900 3850 50  0001 C CNN
@@ -111,7 +144,7 @@ F 3 "" H 8900 4100 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L AvionicsBoard-rescue:+3.3V #PWR05
+L +3.3V #PWR05
 U 1 1 5B1B76AC
 P 9350 3800
 F 0 "#PWR05" H 9350 3650 50  0001 C CNN
@@ -122,7 +155,7 @@ F 3 "" H 9350 3800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AvionicsBoard-rescue:Conn_01x02 J4
+L Conn_01x02 J4
 U 1 1 5B1B7C27
 P 5650 900
 F 0 "J4" H 5650 1000 50  0000 C CNN
@@ -133,7 +166,7 @@ F 3 "" H 5650 900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AvionicsBoard-rescue:GND #PWR06
+L GND #PWR06
 U 1 1 5B1B7CEE
 P 5450 1000
 F 0 "#PWR06" H 5450 750 50  0001 C CNN
@@ -144,7 +177,7 @@ F 3 "" H 5450 1000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AvionicsBoard-rescue:GND #PWR07
+L GND #PWR07
 U 1 1 5B1F2E17
 P 11750 7050
 F 0 "#PWR07" H 11750 6800 50  0001 C CNN
@@ -155,7 +188,7 @@ F 3 "" H 11750 7050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AvionicsBoard-rescue:R R10
+L R R10
 U 1 1 5B1F2E93
 P 11450 5650
 F 0 "R10" V 11530 5650 50  0000 C CNN
@@ -166,7 +199,7 @@ F 3 "" H 11450 5650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AvionicsBoard-rescue:+3.3V #PWR08
+L +3.3V #PWR08
 U 1 1 5B1F2ECC
 P 11450 5350
 F 0 "#PWR08" H 11450 5200 50  0001 C CNN
@@ -177,7 +210,7 @@ F 3 "" H 11450 5350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AvionicsBoard-rescue:C C17
+L C C17
 U 1 1 5B1F30DB
 P 12500 6800
 F 0 "C17" H 12525 6900 50  0000 L CNN
@@ -194,7 +227,7 @@ NoConn ~ 12900 6600
 NoConn ~ 13000 6600
 NoConn ~ 12600 6600
 $Comp
-L AvionicsBoard-rescue:R R11
+L R R11
 U 1 1 5B1F3433
 P 12800 6850
 F 0 "R11" V 12880 6850 50  0000 C CNN
@@ -205,7 +238,7 @@ F 3 "" H 12800 6850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AvionicsBoard-rescue:+3.3V #PWR09
+L +3.3V #PWR09
 U 1 1 5B1F3523
 P 12800 7000
 F 0 "#PWR09" H 12800 6850 50  0001 C CNN
@@ -216,7 +249,7 @@ F 3 "" H 12800 7000 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L AvionicsBoard-rescue:GND #PWR010
+L GND #PWR010
 U 1 1 5B1F362B
 P 13100 6750
 F 0 "#PWR010" H 13100 6500 50  0001 C CNN
@@ -229,7 +262,7 @@ $EndComp
 Text Label 13450 5700 0    60   ~ 0
 SCL
 $Comp
-L AvionicsBoard-rescue:R R12
+L R R12
 U 1 1 5B1F401C
 P 13900 5900
 F 0 "R12" V 13980 5900 50  0000 C CNN
@@ -240,7 +273,7 @@ F 3 "" H 13900 5900 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L AvionicsBoard-rescue:GND #PWR011
+L GND #PWR011
 U 1 1 5B1F40B6
 P 14100 6000
 F 0 "#PWR011" H 14100 5750 50  0001 C CNN
@@ -258,7 +291,7 @@ NoConn ~ 12800 5050
 NoConn ~ 12700 5050
 NoConn ~ 12200 5050
 $Comp
-L AvionicsBoard-rescue:GND #PWR012
+L GND #PWR012
 U 1 1 5B1F4E46
 P 12900 4450
 F 0 "#PWR012" H 12900 4200 50  0001 C CNN
@@ -269,7 +302,7 @@ F 3 "" H 12900 4450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AvionicsBoard-rescue:C C16
+L C C16
 U 1 1 5B1F4EB3
 P 12450 4450
 F 0 "C16" H 12475 4550 50  0000 L CNN
@@ -280,7 +313,7 @@ F 3 "" H 12450 4450 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L AvionicsBoard-rescue:C C15
+L C C15
 U 1 1 5B1F4F74
 P 12450 4100
 F 0 "C15" H 12475 4200 50  0000 L CNN
@@ -295,7 +328,7 @@ OSC_IN
 Text Label 12500 5050 1    60   ~ 0
 OSC_OUT
 $Comp
-L AvionicsBoard-rescue:R R2
+L R R2
 U 1 1 5B1F6764
 P 2900 4250
 F 0 "R2" V 2980 4250 50  0000 C CNN
@@ -306,7 +339,7 @@ F 3 "" H 2900 4250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AvionicsBoard-rescue:R R3
+L R R3
 U 1 1 5B1F67FD
 P 3150 4250
 F 0 "R3" V 3230 4250 50  0000 C CNN
@@ -321,7 +354,7 @@ SDA
 Text Label 2900 4500 0    60   ~ 0
 SCL
 $Comp
-L AvionicsBoard-rescue:C C19
+L C C19
 U 1 1 5B1F7326
 P 14150 4700
 F 0 "C19" H 14175 4800 50  0000 L CNN
@@ -332,7 +365,7 @@ F 3 "" H 14150 4700 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L AvionicsBoard-rescue:C C18
+L C C18
 U 1 1 5B1F744E
 P 13650 4700
 F 0 "C18" H 13675 4800 50  0000 L CNN
@@ -347,7 +380,7 @@ OSC_IN
 Text Label 13650 4350 2    60   ~ 0
 OSC_OUT
 $Comp
-L AvionicsBoard-rescue:GND #PWR013
+L GND #PWR013
 U 1 1 5B1F7637
 P 13900 4950
 F 0 "#PWR013" H 13900 4700 50  0001 C CNN
@@ -358,7 +391,7 @@ F 3 "" H 13900 4950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AvionicsBoard-rescue:ATSAMD21G18 U2
+L ATSAMD21G18 U2
 U 1 1 5B1F8919
 P 2500 6950
 F 0 "U2" H 3650 5600 60  0000 C CNN
@@ -369,7 +402,7 @@ F 3 "" H 2500 6950 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AvionicsBoard-rescue:C C3
+L C C3
 U 1 1 5B1F8E38
 P 1450 5950
 F 0 "C3" H 1475 6050 50  0000 L CNN
@@ -380,7 +413,7 @@ F 3 "" H 1450 5950 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L AvionicsBoard-rescue:C C2
+L C C2
 U 1 1 5B1F8E3E
 P 950 5950
 F 0 "C2" H 975 6050 50  0000 L CNN
@@ -395,7 +428,7 @@ OSC1
 Text Label 1450 5600 0    60   ~ 0
 OSC2
 $Comp
-L AvionicsBoard-rescue:GND #PWR014
+L GND #PWR014
 U 1 1 5B1F8E4A
 P 1200 6200
 F 0 "#PWR014" H 1200 5950 50  0001 C CNN
@@ -418,7 +451,7 @@ AREF
 Text Label 1000 8250 2    60   ~ 0
 AREF
 $Comp
-L AvionicsBoard-rescue:C C1
+L C C1
 U 1 1 5B1F968E
 P 1000 8400
 F 0 "C1" H 1025 8500 50  0000 L CNN
@@ -429,7 +462,7 @@ F 3 "" H 1000 8400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AvionicsBoard-rescue:GND #PWR015
+L GND #PWR015
 U 1 1 5B1F9779
 P 1000 8550
 F 0 "#PWR015" H 1000 8300 50  0001 C CNN
@@ -452,7 +485,7 @@ D8
 Text Label 1750 8000 2    60   ~ 0
 D9
 $Comp
-L AvionicsBoard-rescue:GND #PWR016
+L GND #PWR016
 U 1 1 5B1F9EAC
 P 1300 7300
 F 0 "#PWR016" H 1300 7050 50  0001 C CNN
@@ -463,7 +496,7 @@ F 3 "" H 1300 7300 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L AvionicsBoard-rescue:+3.3V #PWR017
+L +3.3V #PWR017
 U 1 1 5B1F9F5F
 P 1350 7450
 F 0 "#PWR017" H 1350 7300 50  0001 C CNN
@@ -474,7 +507,7 @@ F 3 "" H 1350 7450 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L AvionicsBoard-rescue:+3.3V #PWR018
+L +3.3V #PWR018
 U 1 1 5B1FABBA
 P 2650 8800
 F 0 "#PWR018" H 2650 8650 50  0001 C CNN
@@ -485,7 +518,7 @@ F 3 "" H 2650 8800 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L AvionicsBoard-rescue:GND #PWR019
+L GND #PWR019
 U 1 1 5B1FAC63
 P 2750 8650
 F 0 "#PWR019" H 2750 8400 50  0001 C CNN
@@ -496,7 +529,7 @@ F 3 "" H 2750 8650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AvionicsBoard-rescue:C C5
+L C C5
 U 1 1 5B1FB5CE
 P 2750 6100
 F 0 "C5" H 2775 6200 50  0000 L CNN
@@ -507,7 +540,7 @@ F 3 "" H 2750 6100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AvionicsBoard-rescue:GND #PWR020
+L GND #PWR020
 U 1 1 5B1FBDF7
 P 2750 5850
 F 0 "#PWR020" H 2750 5600 50  0001 C CNN
@@ -559,7 +592,7 @@ D-
 Text Label 3850 7100 0    60   ~ 0
 D+
 $Comp
-L AvionicsBoard-rescue:GND #PWR021
+L GND #PWR021
 U 1 1 5B1FE659
 P 4150 7050
 F 0 "#PWR021" H 4150 6800 50  0001 C CNN
@@ -570,7 +603,7 @@ F 3 "" H 4150 7050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AvionicsBoard-rescue:+3.3V #PWR022
+L +3.3V #PWR022
 U 1 1 5B1FE76E
 P 4100 6850
 F 0 "#PWR022" H 4100 6700 50  0001 C CNN
@@ -589,7 +622,7 @@ TXLED
 Text Label 2950 6400 1    60   ~ 0
 USBHOSTEN
 $Comp
-L AvionicsBoard-rescue:+3.3V #PWR023
+L +3.3V #PWR023
 U 1 1 5B1FF081
 P 2650 6400
 F 0 "#PWR023" H 2650 6250 50  0001 C CNN
@@ -608,7 +641,7 @@ A5
 Text Label 2250 6400 1    60   ~ 0
 RXLED
 $Comp
-L AvionicsBoard-rescue:USB_A J1
+L USB_A J1
 U 1 1 5B1FF65F
 P 900 2500
 F 0 "J1" H 700 2950 50  0000 L CNN
@@ -619,7 +652,7 @@ F 3 "" H 1050 2450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AvionicsBoard-rescue:C C7
+L C C7
 U 1 1 5B200B5D
 P 3600 1600
 F 0 "C7" H 3625 1700 50  0000 L CNN
@@ -630,7 +663,7 @@ F 3 "" H 3600 1600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AvionicsBoard-rescue:GND #PWR024
+L GND #PWR024
 U 1 1 5B200D49
 P 3600 1850
 F 0 "#PWR024" H 3600 1600 50  0001 C CNN
@@ -645,7 +678,7 @@ D+
 Text Label 1200 2600 0    60   ~ 0
 D-
 $Comp
-L AvionicsBoard-rescue:GND #PWR025
+L GND #PWR025
 U 1 1 5B20275D
 P 900 2900
 F 0 "#PWR025" H 900 2650 50  0001 C CNN
@@ -656,7 +689,7 @@ F 3 "" H 900 2900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AvionicsBoard-rescue:Conn_01x04 J3
+L Conn_01x04 J3
 U 1 1 5B207580
 P 2350 4200
 F 0 "J3" H 2350 4400 50  0000 C CNN
@@ -671,7 +704,7 @@ SWDIO
 Text Label 2150 4300 2    60   ~ 0
 SWCLK
 $Comp
-L AvionicsBoard-rescue:+3.3V #PWR026
+L +3.3V #PWR026
 U 1 1 5B2088CA
 P 1700 4100
 F 0 "#PWR026" H 1700 3950 50  0001 C CNN
@@ -682,7 +715,7 @@ F 3 "" H 1700 4100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AvionicsBoard-rescue:GND #PWR027
+L GND #PWR027
 U 1 1 5B208A40
 P 1700 4450
 F 0 "#PWR027" H 1700 4200 50  0001 C CNN
@@ -693,7 +726,7 @@ F 3 "" H 1700 4450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AvionicsBoard-rescue:+3.3V #PWR028
+L +3.3V #PWR028
 U 1 1 5B20AD95
 P 3050 4000
 F 0 "#PWR028" H 3050 3850 50  0001 C CNN
@@ -704,7 +737,7 @@ F 3 "" H 3050 4000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AvionicsBoard-rescue:C C14
+L C C14
 U 1 1 5B20EA08
 P 12050 1900
 F 0 "C14" H 12075 2000 50  0000 L CNN
@@ -715,7 +748,7 @@ F 3 "" H 12050 1900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AvionicsBoard-rescue:C C12
+L C C12
 U 1 1 5B20EAC0
 P 11750 1900
 F 0 "C12" H 11775 2000 50  0000 L CNN
@@ -726,7 +759,7 @@ F 3 "" H 11750 1900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AvionicsBoard-rescue:GND #PWR029
+L GND #PWR029
 U 1 1 5B20ED39
 P 11900 2150
 F 0 "#PWR029" H 11900 1900 50  0001 C CNN
@@ -737,7 +770,7 @@ F 3 "" H 11900 2150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AvionicsBoard-rescue:+3.3V #PWR030
+L +3.3V #PWR030
 U 1 1 5B20EEA4
 P 11450 1550
 F 0 "#PWR030" H 11450 1400 50  0001 C CNN
@@ -753,7 +786,7 @@ SCL
 Text Label 13550 1700 0    60   ~ 0
 SDA
 $Comp
-L AvionicsBoard-rescue:DS3231-SO16 U5
+L DS3231-SO16 U5
 U 1 1 5B211B98
 P 8050 6850
 F 0 "U5" H 8300 6400 60  0000 C CNN
@@ -764,7 +797,7 @@ F 3 "" H 8050 6150 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AvionicsBoard-rescue:R R7
+L R R7
 U 1 1 5B211C6B
 P 7300 6500
 F 0 "R7" V 7380 6500 50  0000 C CNN
@@ -775,7 +808,7 @@ F 3 "" H 7300 6500 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L AvionicsBoard-rescue:R R8
+L R R8
 U 1 1 5B211CD4
 P 7300 6700
 F 0 "R8" V 7380 6700 50  0000 C CNN
@@ -787,7 +820,7 @@ F 3 "" H 7300 6700 50  0001 C CNN
 $EndComp
 NoConn ~ 7550 6800
 $Comp
-L AvionicsBoard-rescue:+3.3V #PWR031
+L +3.3V #PWR031
 U 1 1 5B212116
 P 7000 6400
 F 0 "#PWR031" H 7000 6250 50  0001 C CNN
@@ -798,7 +831,7 @@ F 3 "" H 7000 6400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AvionicsBoard-rescue:C C10
+L C C10
 U 1 1 5B21238F
 P 6600 6750
 F 0 "C10" H 6625 6850 50  0000 L CNN
@@ -809,7 +842,7 @@ F 3 "" H 6600 6750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AvionicsBoard-rescue:GND #PWR032
+L GND #PWR032
 U 1 1 5B2124AD
 P 6600 6900
 F 0 "#PWR032" H 6600 6650 50  0001 C CNN
@@ -824,7 +857,7 @@ SDA
 Text Label 8550 6500 0    60   ~ 0
 SCL
 $Comp
-L AvionicsBoard-rescue:Battery_Cell BT1
+L Battery_Cell BT1
 U 1 1 5B212EC3
 P 10400 1800
 F 0 "BT1" H 10500 1900 50  0000 L CNN
@@ -835,7 +868,7 @@ F 3 "" V 10400 1860 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AvionicsBoard-rescue:GND #PWR033
+L GND #PWR033
 U 1 1 5B2130E7
 P 10400 2000
 F 0 "#PWR033" H 10400 1750 50  0001 C CNN
@@ -854,7 +887,7 @@ NoConn ~ 7550 7100
 NoConn ~ 7550 7000
 NoConn ~ 7550 6900
 $Comp
-L AvionicsBoard-rescue:MAX-M8 U4
+L MAX-M8 U4
 U 1 1 5B2150B2
 P 7950 1450
 F 0 "U4" H 8350 1000 60  0000 C CNN
@@ -865,7 +898,7 @@ F 3 "" H 7800 1300 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AvionicsBoard-rescue:GND #PWR034
+L GND #PWR034
 U 1 1 5B215871
 P 7250 1000
 F 0 "#PWR034" H 7250 750 50  0001 C CNN
@@ -876,7 +909,7 @@ F 3 "" H 7250 1000 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L AvionicsBoard-rescue:Conn_02x03_Odd_Even J8
+L Conn_02x03_Odd_Even J8
 U 1 1 5B216FB1
 P 4000 3400
 F 0 "J8" H 4050 3600 50  0000 C CNN
@@ -887,7 +920,7 @@ F 3 "" H 4000 3400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AvionicsBoard-rescue:+3.3V #PWR035
+L +3.3V #PWR035
 U 1 1 5B2174B9
 P 3800 3250
 F 0 "#PWR035" H 3800 3100 50  0001 C CNN
@@ -898,7 +931,7 @@ F 3 "" H 3800 3250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AvionicsBoard-rescue:+3.3V #PWR036
+L +3.3V #PWR036
 U 1 1 5B2175C5
 P 4300 3250
 F 0 "#PWR036" H 4300 3100 50  0001 C CNN
@@ -909,7 +942,7 @@ F 3 "" H 4300 3250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AvionicsBoard-rescue:GND #PWR037
+L GND #PWR037
 U 1 1 5B217648
 P 4300 3500
 F 0 "#PWR037" H 4300 3250 50  0001 C CNN
@@ -920,7 +953,7 @@ F 3 "" H 4300 3500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AvionicsBoard-rescue:GND #PWR038
+L GND #PWR038
 U 1 1 5B2176CB
 P 3800 3500
 F 0 "#PWR038" H 3800 3250 50  0001 C CNN
@@ -937,7 +970,7 @@ A2
 Text Label 3850 4150 2    60   ~ 0
 D9
 $Comp
-L AvionicsBoard-rescue:Conn_02x02_Odd_Even J9
+L Conn_02x02_Odd_Even J9
 U 1 1 5B219B00
 P 4050 4150
 F 0 "J9" H 4100 4250 50  0000 C CNN
@@ -948,7 +981,7 @@ F 3 "" H 4050 4150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AvionicsBoard-rescue:GND #PWR039
+L GND #PWR039
 U 1 1 5B21A81C
 P 3850 4250
 F 0 "#PWR039" H 3850 4000 50  0001 C CNN
@@ -959,7 +992,7 @@ F 3 "" H 3850 4250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AvionicsBoard-rescue:GND #PWR040
+L GND #PWR040
 U 1 1 5B21A8A2
 P 4350 4250
 F 0 "#PWR040" H 4350 4000 50  0001 C CNN
@@ -972,7 +1005,7 @@ $EndComp
 NoConn ~ 7250 1300
 NoConn ~ 7250 1400
 $Comp
-L AvionicsBoard-rescue:+3.3V #PWR041
+L +3.3V #PWR041
 U 1 1 5B21BAFC
 P 6700 1650
 F 0 "#PWR041" H 6700 1500 50  0001 C CNN
@@ -984,7 +1017,7 @@ F 3 "" H 6700 1650 50  0001 C CNN
 $EndComp
 NoConn ~ 7250 1800
 $Comp
-L AvionicsBoard-rescue:C C11
+L C C11
 U 1 1 5B21BB8F
 P 6700 1850
 F 0 "C11" H 6725 1950 50  0000 L CNN
@@ -995,7 +1028,7 @@ F 3 "" H 6700 1850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AvionicsBoard-rescue:C C13
+L C C13
 U 1 1 5B21BC42
 P 6950 1850
 F 0 "C13" H 6975 1950 50  0000 L CNN
@@ -1006,7 +1039,7 @@ F 3 "" H 6950 1850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AvionicsBoard-rescue:GND #PWR042
+L GND #PWR042
 U 1 1 5B21C084
 P 6800 2050
 F 0 "#PWR042" H 6800 1800 50  0001 C CNN
@@ -1018,7 +1051,7 @@ F 3 "" H 6800 2050 50  0001 C CNN
 $EndComp
 NoConn ~ 8600 1000
 $Comp
-L AvionicsBoard-rescue:GND #PWR043
+L GND #PWR043
 U 1 1 5B21D578
 P 8800 1600
 F 0 "#PWR043" H 8800 1350 50  0001 C CNN
@@ -1029,7 +1062,7 @@ F 3 "" H 8800 1600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AvionicsBoard-rescue:Conn_Coaxial J7
+L Conn_Coaxial J7
 U 1 1 5B21D6BE
 P 9300 1850
 F 0 "J7" H 9310 1970 50  0000 C CNN
@@ -1040,7 +1073,7 @@ F 3 "" H 9300 1850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AvionicsBoard-rescue:GND #PWR044
+L GND #PWR044
 U 1 1 5B21D95E
 P 8600 1800
 F 0 "#PWR044" H 8600 1550 50  0001 C CNN
@@ -1051,7 +1084,7 @@ F 3 "" H 8600 1800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AvionicsBoard-rescue:GND #PWR045
+L GND #PWR045
 U 1 1 5B21D9ED
 P 9300 2050
 F 0 "#PWR045" H 9300 1800 50  0001 C CNN
@@ -1062,7 +1095,7 @@ F 3 "" H 9300 2050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AvionicsBoard-rescue:VBUS #PWR046
+L VBUS #PWR046
 U 1 1 5B2212AC
 P 4600 1600
 F 0 "#PWR046" H 4600 1450 50  0001 C CNN
@@ -1073,7 +1106,7 @@ F 3 "" H 4600 1600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AvionicsBoard-rescue:VBUS #PWR047
+L VBUS #PWR047
 U 1 1 5B22B474
 P 1250 2300
 F 0 "#PWR047" H 1250 2150 50  0001 C CNN
@@ -1084,7 +1117,7 @@ F 3 "" H 1250 2300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AvionicsBoard-rescue:Micro_SD_Card J6
+L Micro_SD_Card J6
 U 1 1 5B22F8F9
 P 8200 9550
 F 0 "J6" H 7550 10150 50  0000 C CNN
@@ -1095,7 +1128,7 @@ F 3 "" H 8200 9550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AvionicsBoard-rescue:+3.3V #PWR048
+L +3.3V #PWR048
 U 1 1 5B232BEE
 P 7000 9150
 F 0 "#PWR048" H 7000 9000 50  0001 C CNN
@@ -1106,7 +1139,7 @@ F 3 "" H 7000 9150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AvionicsBoard-rescue:C C9
+L C C9
 U 1 1 5B232D60
 P 6750 9700
 F 0 "C9" H 6775 9800 50  0000 L CNN
@@ -1117,7 +1150,7 @@ F 3 "" H 6750 9700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AvionicsBoard-rescue:GND #PWR049
+L GND #PWR049
 U 1 1 5B232FF9
 P 6750 10000
 F 0 "#PWR049" H 6750 9750 50  0001 C CNN
@@ -1136,7 +1169,7 @@ MISO
 Text Label 7300 9450 2    60   ~ 0
 MOSI
 $Comp
-L AvionicsBoard-rescue:Conn_01x03 J10
+L Conn_01x03 J10
 U 1 1 5B23F716
 P 2550 3350
 F 0 "J10" H 2550 3550 50  0000 C CNN
@@ -1151,7 +1184,7 @@ SCL
 Text Label 2350 3350 2    60   ~ 0
 SDA
 $Comp
-L AvionicsBoard-rescue:GND #PWR050
+L GND #PWR050
 U 1 1 5B23F942
 P 2350 3450
 F 0 "#PWR050" H 2350 3200 50  0001 C CNN
@@ -1162,7 +1195,7 @@ F 3 "" H 2350 3450 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L AvionicsBoard-rescue:Conn_01x03 J11
+L Conn_01x03 J11
 U 1 1 5B23F9F2
 P 3150 3350
 F 0 "J11" H 3150 3550 50  0000 C CNN
@@ -1177,7 +1210,7 @@ TXD
 Text Label 2950 3350 2    60   ~ 0
 RXD
 $Comp
-L AvionicsBoard-rescue:GND #PWR051
+L GND #PWR051
 U 1 1 5B23FC0C
 P 2950 3450
 F 0 "#PWR051" H 2950 3200 50  0001 C CNN
@@ -1188,7 +1221,7 @@ F 3 "" H 2950 3450 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L AvionicsBoard-rescue:ECS-.327-12.5-17X-TR U9
+L ECS-.327-12.5-17X-TR U9
 U 1 1 5B24091D
 P 1150 5000
 F 0 "U9" V 900 4750 60  0000 C CNN
@@ -1199,7 +1232,7 @@ F 3 "" H 1150 5000 60  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L AvionicsBoard-rescue:ECS-.327-12.5-17X-TR U10
+L ECS-.327-12.5-17X-TR U10
 U 1 1 5B24128C
 P 13850 3800
 F 0 "U10" V 13600 3550 60  0000 C CNN
@@ -1210,7 +1243,7 @@ F 3 "" H 13850 3800 60  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L AvionicsBoard-rescue:LED D3
+L LED D3
 U 1 1 5B2064D7
 P 3900 1600
 F 0 "D3" H 3900 1700 50  0000 C CNN
@@ -1221,7 +1254,7 @@ F 3 "" H 3900 1600 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L AvionicsBoard-rescue:R R13
+L R R13
 U 1 1 5B20665F
 P 3900 1900
 F 0 "R13" V 3980 1900 50  0000 C CNN
@@ -1232,7 +1265,7 @@ F 3 "" H 3900 1900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AvionicsBoard-rescue:GND #PWR052
+L GND #PWR052
 U 1 1 5B206716
 P 3900 2050
 F 0 "#PWR052" H 3900 1800 50  0001 C CNN
@@ -1243,7 +1276,7 @@ F 3 "" H 3900 2050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AvionicsBoard-rescue:GND #PWR053
+L GND #PWR053
 U 1 1 5B20802A
 P 7250 4250
 F 0 "#PWR053" H 7250 4000 50  0001 C CNN
@@ -1254,7 +1287,7 @@ F 3 "" H 7250 4250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AvionicsBoard-rescue:PWR_FLAG #FLG054
+L PWR_FLAG #FLG054
 U 1 1 5B20AA4E
 P 1350 1300
 F 0 "#FLG054" H 1350 1375 50  0001 C CNN
@@ -1265,7 +1298,7 @@ F 3 "" H 1350 1300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AvionicsBoard-rescue:PWR_FLAG #FLG055
+L PWR_FLAG #FLG055
 U 1 1 5B20AB48
 P 2850 1250
 F 0 "#FLG055" H 2850 1325 50  0001 C CNN
@@ -1276,7 +1309,7 @@ F 3 "" H 2850 1250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AvionicsBoard-rescue:PWR_FLAG #FLG056
+L PWR_FLAG #FLG056
 U 1 1 5B20ADD1
 P 5450 900
 F 0 "#FLG056" H 5450 975 50  0001 C CNN
@@ -1292,7 +1325,7 @@ NoConn ~ 8500 3600
 NoConn ~ 8500 3900
 NoConn ~ 8500 4000
 $Comp
-L AvionicsBoard-rescue:GND #PWR057
+L GND #PWR057
 U 1 1 5B2123C3
 P 7300 3400
 F 0 "#PWR057" H 7300 3150 50  0001 C CNN
@@ -1303,7 +1336,7 @@ F 3 "" H 7300 3400 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L AvionicsBoard-rescue:PWR_FLAG #FLG058
+L PWR_FLAG #FLG058
 U 1 1 5B220EB1
 P 2450 1900
 F 0 "#FLG058" H 2450 1975 50  0001 C CNN
@@ -1314,7 +1347,7 @@ F 3 "" H 2450 1900 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L AvionicsBoard-rescue:+3.3V #PWR059
+L +3.3V #PWR059
 U 1 1 5B225949
 P 12300 4050
 F 0 "#PWR059" H 12300 3900 50  0001 C CNN
@@ -1325,7 +1358,7 @@ F 3 "" H 12300 4050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AvionicsBoard-rescue:+3.3V #PWR060
+L +3.3V #PWR060
 U 1 1 5B2266A1
 P 3600 1150
 F 0 "#PWR060" H 3600 1000 50  0001 C CNN
@@ -1336,7 +1369,7 @@ F 3 "" H 3600 1150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AvionicsBoard-rescue:Conn_01x04 J5
+L Conn_01x04 J5
 U 1 1 5B241BE0
 P 1850 3300
 F 0 "J5" H 1850 3500 50  0000 C CNN
@@ -1353,7 +1386,7 @@ SCK
 Text Label 1650 3400 2    60   ~ 0
 MOSI
 $Comp
-L AvionicsBoard-rescue:GND #PWR061
+L GND #PWR061
 U 1 1 5B242EC8
 P 1500 3550
 F 0 "#PWR061" H 1500 3300 50  0001 C CNN
@@ -1364,7 +1397,7 @@ F 3 "" H 1500 3550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AvionicsBoard-rescue:Conn_Coaxial J12
+L Conn_Coaxial J12
 U 1 1 5B37DDA7
 P 9300 4200
 F 0 "J12" H 9310 4320 50  0000 C CNN
@@ -1375,7 +1408,7 @@ F 3 "" H 9300 4200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AvionicsBoard-rescue:GND #PWR062
+L GND #PWR062
 U 1 1 5B37EDCC
 P 9300 4400
 F 0 "#PWR062" H 9300 4150 50  0001 C CNN
@@ -1394,7 +1427,7 @@ RADIO_CS
 Text Label 4350 4150 0    60   ~ 0
 D10
 $Comp
-L AvionicsBoard-rescue:LED D4
+L LED D4
 U 1 1 5BDD1B4D
 P 2050 9550
 F 0 "D4" H 2050 9650 50  0000 C CNN
@@ -1405,7 +1438,7 @@ F 3 "" H 2050 9550 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L AvionicsBoard-rescue:LED D5
+L LED D5
 U 1 1 5BDD4B11
 P 2050 9850
 F 0 "D5" H 2050 9950 50  0000 C CNN
@@ -1416,7 +1449,7 @@ F 3 "" H 2050 9850 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L AvionicsBoard-rescue:LED D6
+L LED D6
 U 1 1 5BDD4BD1
 P 2050 10150
 F 0 "D6" H 2050 10250 50  0000 C CNN
@@ -1433,7 +1466,7 @@ D6
 Text Label 1900 10150 2    60   ~ 0
 D12
 $Comp
-L AvionicsBoard-rescue:GND #PWR063
+L GND #PWR063
 U 1 1 5BDD7E94
 P 2600 10350
 F 0 "#PWR063" H 2600 10100 50  0001 C CNN
@@ -1444,7 +1477,7 @@ F 3 "" H 2600 10350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AvionicsBoard-rescue:R R19
+L R R19
 U 1 1 5BDD8D3B
 P 2350 9550
 F 0 "R19" V 2430 9550 50  0000 C CNN
@@ -1455,7 +1488,7 @@ F 3 "" H 2350 9550 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L AvionicsBoard-rescue:R R20
+L R R20
 U 1 1 5BDD91DC
 P 2350 9850
 F 0 "R20" V 2430 9850 50  0000 C CNN
@@ -1466,7 +1499,7 @@ F 3 "" H 2350 9850 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L AvionicsBoard-rescue:R R21
+L R R21
 U 1 1 5BDD92DE
 P 2350 10150
 F 0 "R21" V 2430 10150 50  0000 C CNN
@@ -1477,7 +1510,7 @@ F 3 "" H 2350 10150 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L AvionicsBoard-rescue:D_Zener D1
+L D_Zener D1
 U 1 1 5B2214FD
 P 1550 1000
 F 0 "D1" H 1550 1100 50  0000 C CNN
@@ -1488,7 +1521,7 @@ F 3 "" H 1550 1000 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L AvionicsBoard-rescue:+12V #PWR064
+L +12V #PWR064
 U 1 1 5C013282
 P 1550 850
 F 0 "#PWR064" H 1550 700 50  0001 C CNN
@@ -1499,7 +1532,7 @@ F 3 "" H 1550 850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AvionicsBoard-rescue:+12V #PWR065
+L +12V #PWR065
 U 1 1 5C013707
 P 5450 900
 F 0 "#PWR065" H 5450 750 50  0001 C CNN
@@ -1514,7 +1547,7 @@ B+
 Text Label 7250 1500 2    60   ~ 0
 B+
 $Comp
-L AvionicsBoard-rescue:C C8
+L C C8
 U 1 1 5C022CED
 P 9700 1600
 F 0 "C8" H 9725 1700 50  0000 L CNN
@@ -1525,7 +1558,7 @@ F 3 "" H 9700 1600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AvionicsBoard-rescue:GND #PWR066
+L GND #PWR066
 U 1 1 5C022FAA
 P 9700 1900
 F 0 "#PWR066" H 9700 1650 50  0001 C CNN
@@ -1536,7 +1569,7 @@ F 3 "" H 9700 1900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AvionicsBoard-rescue:R R1
+L R R1
 U 1 1 5C023298
 P 8900 1300
 F 0 "R1" V 8980 1300 50  0000 C CNN
@@ -1547,7 +1580,7 @@ F 3 "" H 8900 1300 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L AvionicsBoard-rescue:+3.3V #PWR067
+L +3.3V #PWR067
 U 1 1 5C024F6A
 P 8900 1550
 F 0 "#PWR067" H 8900 1400 50  0001 C CNN
@@ -1558,7 +1591,7 @@ F 3 "" H 8900 1550 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L AvionicsBoard-rescue:MPL3115A2 U6
+L MPL3115A2 U6
 U 1 1 5C02869C
 P 13050 1750
 F 0 "U6" H 13300 1500 60  0000 C CNN
@@ -1578,7 +1611,7 @@ TXD
 Text Label 7250 1100 2    60   ~ 0
 RXD
 $Comp
-L AvionicsBoard-rescue:PWR_FLAG #FLG068
+L PWR_FLAG #FLG068
 U 1 1 5C0E1221
 P 4700 950
 F 0 "#FLG068" H 4700 1025 50  0001 C CNN
@@ -1589,7 +1622,7 @@ F 3 "" H 4700 950 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L AvionicsBoard-rescue:+12V #PWR069
+L +12V #PWR069
 U 1 1 5C0E12DA
 P 4700 950
 F 0 "#PWR069" H 4700 800 50  0001 C CNN
@@ -1600,7 +1633,7 @@ F 3 "" H 4700 950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AvionicsBoard-rescue:GND #PWR070
+L GND #PWR070
 U 1 1 5C0E1393
 P 4700 1050
 F 0 "#PWR070" H 4700 800 50  0001 C CNN
@@ -1613,7 +1646,7 @@ $EndComp
 NoConn ~ 8600 1100
 NoConn ~ 8600 1200
 $Comp
-L AvionicsBoard-rescue:Buzzer BZ1
+L Buzzer BZ1
 U 1 1 5C3159F5
 P 7650 5050
 F 0 "BZ1" H 7800 5100 50  0000 L CNN
@@ -1628,12 +1661,12 @@ Wire Wire Line
 Wire Wire Line
 	11850 5700 11750 5700
 Wire Wire Line
-	11750 5700 11750 6000
+	11750 5700 11750 7050
 Wire Wire Line
 	11850 6000 11750 6000
 Connection ~ 11750 6000
 Wire Wire Line
-	11450 5350 11450 5450
+	11450 5350 11450 5500
 Wire Wire Line
 	11450 5800 11450 5900
 Wire Wire Line
@@ -1648,7 +1681,7 @@ Connection ~ 11450 5450
 Wire Wire Line
 	12200 6600 12200 7000
 Wire Wire Line
-	11750 7000 12200 7000
+	11750 7000 12500 7000
 Connection ~ 11750 7000
 Wire Wire Line
 	12500 6650 12500 6600
@@ -1660,11 +1693,11 @@ Wire Wire Line
 Wire Wire Line
 	12700 6700 12800 6700
 Wire Wire Line
-	13100 6600 13100 6650
+	13100 6600 13100 6750
 Wire Wire Line
 	13650 6650 13100 6650
 Wire Wire Line
-	13650 5800 13650 6000
+	13650 5800 13650 6650
 Wire Wire Line
 	13650 6000 13450 6000
 Connection ~ 13100 6650
@@ -1680,15 +1713,15 @@ Wire Wire Line
 Wire Wire Line
 	12600 4450 12900 4450
 Wire Wire Line
-	12600 4100 12600 4450
+	12600 4100 12600 5050
 Connection ~ 12600 4450
 Wire Wire Line
-	12300 4050 12300 4100
+	12300 4050 12300 5050
 Connection ~ 12300 4450
 Wire Wire Line
 	2900 4100 2900 4050
 Wire Wire Line
-	2900 4050 3050 4050
+	2900 4050 3150 4050
 Wire Wire Line
 	3150 4050 3150 4100
 Wire Wire Line
@@ -1706,7 +1739,7 @@ Wire Wire Line
 Wire Wire Line
 	13650 4850 13650 4950
 Wire Wire Line
-	13650 4950 13900 4950
+	13650 4950 14150 4950
 Wire Wire Line
 	14150 4950 14150 4850
 Connection ~ 13900 4950
@@ -1721,7 +1754,7 @@ Wire Wire Line
 Wire Wire Line
 	950  6100 950  6200
 Wire Wire Line
-	950  6200 1200 6200
+	950  6200 1450 6200
 Wire Wire Line
 	1450 6200 1450 6100
 Connection ~ 1200 6200
@@ -1742,7 +1775,7 @@ Wire Wire Line
 Wire Wire Line
 	2850 5900 2750 5900
 Wire Wire Line
-	2750 5850 2750 5900
+	2750 5850 2750 5950
 Connection ~ 2750 5900
 Wire Wire Line
 	4150 7050 4150 7000
@@ -1755,11 +1788,11 @@ Wire Wire Line
 Wire Wire Line
 	3250 1350 3250 1450
 Wire Wire Line
-	3600 1150 3600 1350
+	3600 1150 3600 1450
 Wire Wire Line
 	900  2900 800  2900
 Wire Wire Line
-	2700 1350 2850 1350
+	2700 1350 3900 1350
 Connection ~ 3600 1350
 Connection ~ 3250 1350
 Wire Wire Line
@@ -1775,11 +1808,11 @@ Wire Wire Line
 Wire Wire Line
 	12050 1700 12550 1700
 Wire Wire Line
-	11450 1600 11750 1600
+	11450 1600 12550 1600
 Wire Wire Line
 	11750 1600 11750 1750
 Wire Wire Line
-	11450 2150 11750 2150
+	11450 2150 12250 2150
 Wire Wire Line
 	11750 2150 11750 2050
 Wire Wire Line
@@ -1800,11 +1833,11 @@ Wire Wire Line
 Wire Wire Line
 	7550 6700 7450 6700
 Wire Wire Line
-	7000 6400 7000 6500
+	7000 6400 7000 6700
 Wire Wire Line
 	7000 6500 7150 6500
 Wire Wire Line
-	6600 6600 7000 6600
+	6600 6600 7550 6600
 Connection ~ 7000 6500
 Wire Wire Line
 	7000 6700 7150 6700
@@ -1814,12 +1847,12 @@ Wire Wire Line
 Wire Wire Line
 	7250 1700 7250 1600
 Wire Wire Line
-	6700 1700 6950 1700
+	6700 1700 7250 1700
 Connection ~ 6950 1700
 Wire Wire Line
 	6700 1650 6700 1700
 Wire Wire Line
-	6700 2000 6800 2000
+	6700 2000 6950 2000
 Wire Wire Line
 	6800 2050 6800 2000
 Connection ~ 6800 2000
@@ -1836,7 +1869,7 @@ Wire Wire Line
 Wire Wire Line
 	7000 9150 7000 9550
 Wire Wire Line
-	6750 9550 7000 9550
+	6750 9550 7300 9550
 Connection ~ 7000 9550
 Wire Wire Line
 	7300 9750 7000 9750
@@ -1845,7 +1878,7 @@ Wire Wire Line
 Wire Wire Line
 	7000 9900 6750 9900
 Wire Wire Line
-	6750 9850 6750 9900
+	6750 9850 6750 10000
 Connection ~ 6750 9900
 Wire Wire Line
 	6800 9350 7300 9350
@@ -1860,7 +1893,7 @@ Wire Wire Line
 Wire Wire Line
 	7250 4200 7400 4200
 Wire Wire Line
-	2200 1750 2200 1900
+	2200 1750 2200 1950
 Wire Wire Line
 	2850 1250 2850 1350
 Connection ~ 2850 1350
@@ -1869,7 +1902,11 @@ Wire Wire Line
 Wire Wire Line
 	8500 4200 9150 4200
 Wire Wire Line
+	7400 3900 7400 3900
+Wire Wire Line
 	8500 3800 9350 3800
+Wire Wire Line
+	7400 3700 7400 3700
 Wire Wire Line
 	7300 3400 7300 3500
 Wire Wire Line
@@ -1898,7 +1935,7 @@ Wire Wire Line
 Wire Wire Line
 	2350 8700 2350 8450
 Wire Wire Line
-	2600 9550 2600 9850
+	2600 9550 2600 10350
 Wire Wire Line
 	2600 10150 2500 10150
 Wire Wire Line
@@ -1909,7 +1946,7 @@ Wire Wire Line
 Connection ~ 2600 9850
 Connection ~ 1550 1350
 Wire Wire Line
-	1550 1150 1550 1350
+	1550 1150 1550 1500
 Wire Wire Line
 	9700 1400 9700 1450
 Wire Wire Line
@@ -1921,7 +1958,7 @@ Wire Wire Line
 Wire Wire Line
 	8600 1300 8750 1300
 Wire Wire Line
-	8600 1400 9150 1400
+	8600 1400 9700 1400
 Wire Wire Line
 	9150 1300 9150 1400
 Connection ~ 9150 1400
@@ -1932,7 +1969,7 @@ Wire Wire Line
 Wire Wire Line
 	3850 8000 4150 8000
 Wire Wire Line
-	1350 1350 1550 1350
+	1350 1350 1700 1350
 Wire Wire Line
 	1350 1300 1350 1350
 Wire Wire Line
@@ -1940,7 +1977,7 @@ Wire Wire Line
 Wire Wire Line
 	1750 7800 1400 7800
 $Comp
-L AvionicsBoard-rescue:RFM95W U8
+L RFM95W U8
 U 1 1 5B1B73E9
 P 7950 3850
 F 0 "U8" H 8250 3400 60  0000 C CNN
@@ -1959,7 +1996,7 @@ LORA_RESET
 Text Label 1400 7900 2    60   ~ 0
 LORA_INTERRUPT
 $Comp
-L AvionicsBoard-rescue:R R4
+L R R4
 U 1 1 5C31A8C9
 P 7300 4950
 F 0 "R4" V 7380 4950 50  0000 C CNN
@@ -1972,7 +2009,7 @@ $EndComp
 Wire Wire Line
 	7450 4950 7550 4950
 $Comp
-L AvionicsBoard-rescue:GND #PWR071
+L GND #PWR071
 U 1 1 5C31AB56
 P 7400 5150
 F 0 "#PWR071" H 7400 4900 50  0001 C CNN
@@ -1991,7 +2028,7 @@ BUZZER
 Text Label 7150 4950 2    60   ~ 0
 BUZZER
 $Comp
-L AvionicsBoard-rescue:LT1117CST-3.3#TRPBF U1
+L LT1117CST-3.3#TRPBF U1
 U 1 1 5C31E4DE
 P 2200 1350
 F 0 "U1" H 1950 1100 60  0000 C CNN
@@ -2002,7 +2039,7 @@ F 3 "" H 2200 1350 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AvionicsBoard-rescue:MCP1825S U3
+L MCP1825S U3
 U 1 1 5C32022C
 P 5200 1650
 F 0 "U3" H 4900 1400 60  0000 C CNN
@@ -2013,7 +2050,7 @@ F 3 "" H 5200 1650 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AvionicsBoard-rescue:C C20
+L C C20
 U 1 1 5C3203D3
 P 4600 1850
 F 0 "C20" H 4625 1950 50  0000 L CNN
@@ -2024,18 +2061,18 @@ F 3 "" H 4600 1850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4600 1600 4600 1650
+	4600 1600 4600 1700
 Wire Wire Line
 	4650 1650 4600 1650
 Connection ~ 4600 1650
 Wire Wire Line
 	4600 2000 4600 2100
 Wire Wire Line
-	4600 2100 5200 2100
+	4600 2100 5800 2100
 Wire Wire Line
-	5200 2050 5200 2100
+	5200 2050 5200 2150
 $Comp
-L AvionicsBoard-rescue:C C21
+L C C21
 U 1 1 5C320D10
 P 5800 1850
 F 0 "C21" H 5825 1950 50  0000 L CNN
@@ -2051,9 +2088,9 @@ Connection ~ 5200 2100
 Wire Wire Line
 	5750 1650 5800 1650
 Wire Wire Line
-	5800 1600 5800 1650
+	5800 1600 5800 1700
 $Comp
-L AvionicsBoard-rescue:+3.3V #PWR072
+L +3.3V #PWR072
 U 1 1 5C320FEC
 P 5800 1600
 F 0 "#PWR072" H 5800 1450 50  0001 C CNN
@@ -2065,7 +2102,7 @@ F 3 "" H 5800 1600 50  0001 C CNN
 $EndComp
 Connection ~ 5800 1650
 $Comp
-L AvionicsBoard-rescue:GND #PWR073
+L GND #PWR073
 U 1 1 5C32166B
 P 5200 2150
 F 0 "#PWR073" H 5200 1900 50  0001 C CNN
@@ -2076,7 +2113,7 @@ F 3 "" H 5200 2150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AvionicsBoard-rescue:PWR_FLAG #FLG074
+L PWR_FLAG #FLG074
 U 1 1 5C32261C
 P 4600 1650
 F 0 "#FLG074" H 4600 1725 50  0001 C CNN
@@ -2089,7 +2126,7 @@ $EndComp
 Text Notes 4250 2750 0    60   ~ 0
 Technically, there should be a PFET to switch off battery power\nand turn on USB power when the USB is plugged in, instead of two regulators.\nThis will be changed in the next revision.
 $Comp
-L AvionicsBoard-rescue:Conn_01x01 J13
+L Conn_01x01 J13
 U 1 1 5C32936E
 P 5900 10250
 F 0 "J13" H 5900 10350 50  0000 C CNN
@@ -2102,7 +2139,7 @@ $EndComp
 Text Label 5700 10250 2    60   ~ 0
 SD_CS
 $Comp
-L AvionicsBoard-rescue:C C22
+L C C22
 U 1 1 5C32A6AF
 P 11450 1900
 F 0 "C22" H 11475 2000 50  0000 L CNN
@@ -2116,11 +2153,11 @@ Wire Wire Line
 	11450 2150 11450 2050
 Connection ~ 11750 2150
 Wire Wire Line
-	11450 1550 11450 1600
+	11450 1550 11450 1750
 Connection ~ 11750 1600
 Connection ~ 11450 1600
 $Comp
-L AvionicsBoard-rescue:Conn_01x01 J14
+L Conn_01x01 J14
 U 1 1 5C32E2A4
 P 2250 9250
 F 0 "J14" H 2250 9350 50  0000 C CNN
@@ -2135,7 +2172,7 @@ Wire Wire Line
 Wire Wire Line
 	1900 9250 2050 9250
 $Comp
-L AvionicsBoard-rescue:GND #PWR075
+L GND #PWR075
 U 1 1 5C330EF1
 P 8750 6850
 F 0 "#PWR075" H 8750 6600 50  0001 C CNN
@@ -2151,7 +2188,7 @@ Wire Wire Line
 	8750 6800 8550 6800
 NoConn ~ 8550 6700
 $Comp
-L AvionicsBoard-rescue:Conn_01x01 J15
+L Conn_01x01 J15
 U 1 1 5C331C30
 P 12700 8200
 F 0 "J15" H 12700 8300 50  0000 C CNN
@@ -2162,7 +2199,7 @@ F 3 "" H 12700 8200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AvionicsBoard-rescue:GND #PWR076
+L GND #PWR076
 U 1 1 5C3325F2
 P 12400 9200
 F 0 "#PWR076" H 12400 8950 50  0001 C CNN
@@ -2173,7 +2210,7 @@ F 3 "" H 12400 9200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AvionicsBoard-rescue:Conn_01x01 J16
+L Conn_01x01 J16
 U 1 1 5C332796
 P 12700 8500
 F 0 "J16" H 12700 8600 50  0000 C CNN
@@ -2184,7 +2221,7 @@ F 3 "" H 12700 8500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AvionicsBoard-rescue:Conn_01x01 J17
+L Conn_01x01 J17
 U 1 1 5C33287E
 P 12700 8800
 F 0 "J17" H 12700 8900 50  0000 C CNN
@@ -2195,7 +2232,7 @@ F 3 "" H 12700 8800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AvionicsBoard-rescue:Conn_01x01 J18
+L Conn_01x01 J18
 U 1 1 5C332973
 P 12700 9100
 F 0 "J18" H 12700 9200 50  0000 C CNN
@@ -2206,7 +2243,7 @@ F 3 "" H 12700 9100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	12400 8200 12400 8500
+	12400 8200 12400 9200
 Wire Wire Line
 	12400 9100 12500 9100
 Wire Wire Line
@@ -2219,7 +2256,7 @@ Wire Wire Line
 	12400 8200 12500 8200
 Connection ~ 12400 8500
 $Comp
-L AvionicsBoard-rescue:GND #PWR?
+L GND #PWR?
 U 1 1 5C335F34
 P 9050 10200
 F 0 "#PWR?" H 9050 9950 50  0001 C CNN
@@ -2233,90 +2270,4 @@ Wire Wire Line
 	9050 10200 9050 10150
 Wire Wire Line
 	9050 10150 9000 10150
-Wire Wire Line
-	11750 6000 11750 7000
-Wire Wire Line
-	11450 5450 11450 5500
-Wire Wire Line
-	11750 7000 11750 7050
-Wire Wire Line
-	12200 7000 12500 7000
-Wire Wire Line
-	13100 6650 13100 6750
-Wire Wire Line
-	13650 6000 13650 6650
-Wire Wire Line
-	12600 4450 12600 5050
-Wire Wire Line
-	12300 4450 12300 5050
-Wire Wire Line
-	13900 4950 14150 4950
-Wire Wire Line
-	1200 6200 1450 6200
-Wire Wire Line
-	2750 5900 2750 5950
-Wire Wire Line
-	3600 1350 3600 1450
-Wire Wire Line
-	3600 1350 3900 1350
-Wire Wire Line
-	3250 1350 3600 1350
-Wire Wire Line
-	11900 2150 12050 2150
-Wire Wire Line
-	12050 2150 12250 2150
-Wire Wire Line
-	12400 1600 12550 1600
-Wire Wire Line
-	7000 6500 7000 6600
-Wire Wire Line
-	7000 6600 7550 6600
-Wire Wire Line
-	7000 6600 7000 6700
-Wire Wire Line
-	6950 1700 7250 1700
-Wire Wire Line
-	6800 2000 6950 2000
-Wire Wire Line
-	7000 9550 7300 9550
-Wire Wire Line
-	6750 9900 6750 10000
-Wire Wire Line
-	2850 1350 3250 1350
-Wire Wire Line
-	2200 1900 2200 1950
-Wire Wire Line
-	12300 4100 12300 4450
-Wire Wire Line
-	3050 4050 3150 4050
-Wire Wire Line
-	2600 10150 2600 10350
-Wire Wire Line
-	2600 9850 2600 10150
-Wire Wire Line
-	1550 1350 1550 1500
-Wire Wire Line
-	1550 1350 1700 1350
-Wire Wire Line
-	9150 1400 9700 1400
-Wire Wire Line
-	4600 1650 4600 1700
-Wire Wire Line
-	5200 2100 5800 2100
-Wire Wire Line
-	5200 2100 5200 2150
-Wire Wire Line
-	5800 1650 5800 1700
-Wire Wire Line
-	11750 2150 11900 2150
-Wire Wire Line
-	11750 1600 12400 1600
-Wire Wire Line
-	11450 1600 11450 1750
-Wire Wire Line
-	12400 9100 12400 9200
-Wire Wire Line
-	12400 8800 12400 9100
-Wire Wire Line
-	12400 8500 12400 8800
 $EndSCHEMATC

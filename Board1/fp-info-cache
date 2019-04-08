@@ -1,4 +1,4 @@
-184508346741578
+201179974837173
 Battery_Holders
 Bulgin_BX0036_1xC
 
@@ -120,6 +120,13 @@ Keystone_3034_1x20mm-CoinCell
 0
 Battery_Holders
 Seiko_MS621F
+
+
+0
+0
+0
+Board1
+CycloneRocketryLogo
 
 
 0
@@ -21377,6 +21384,76 @@ Fiducial_Modern_SilkscreenTop
 0
 0
 0
+FoxWestern
+Adafruit_GPS
+
+
+0
+11
+11
+FoxWestern
+ADXL377
+
+
+0
+11
+7
+FoxWestern
+BNO055
+
+
+0
+14
+10
+FoxWestern
+Datalogger
+
+
+0
+12
+8
+FoxWestern
+DS3231
+
+
+0
+10
+8
+FoxWestern
+MCP9808
+
+
+0
+10
+8
+FoxWestern
+MPL115A2
+
+
+0
+8
+6
+FoxWestern
+NucleoSocketStrip
+Through hole straight socket strip, 2x19, 2.54mm pitch, double rows
+Through hole socket strip THT 2x19 2.54mm double row
+0
+38
+38
+FoxWestern
+PCA9685
+
+
+0
+28
+28
+FoxWestern
+XT60
+
+
+0
+2
+2
 Fuse_Holders_and_Fuses
 BladeFuse-CarType
 
