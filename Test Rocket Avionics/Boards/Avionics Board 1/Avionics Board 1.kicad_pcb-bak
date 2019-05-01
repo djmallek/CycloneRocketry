@@ -1027,7 +1027,7 @@
   )
 
   (module Capacitors_SMD:C_0805 (layer F.Cu) (tedit 5C709E67) (tstamp 5CA4173B)
-    (at 51.4096 113.2586 90)
+    (at 51.30292 113.32972 90)
     (descr "Capacitor SMD 0805, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0805")
     (path /5C4F0AF7)
