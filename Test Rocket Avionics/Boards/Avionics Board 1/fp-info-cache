@@ -1,4 +1,4 @@
-202956273247317
+204527565392774
 Battery_Holders
 Bulgin_BX0036_1xC
 
@@ -19697,6 +19697,13 @@ Resonator_SMD_muRata_TPSKA-3pin_7.9x3.8mm_HandSoldering
 0
 0
 0
+DannysLib
+BMP280
+
+
+0
+8
+8
 DannysLib
 BNO055-LGA
 
