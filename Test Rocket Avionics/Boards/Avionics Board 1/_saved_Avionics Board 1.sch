@@ -1664,17 +1664,6 @@ F 3 "https://www.digikey.com/product-detail/en/texas-instruments/LMR62014XMF-NOP
 	1    0    0    -1  
 $EndComp
 $Comp
-L Avionics-Board-1-rescue:+3.3V #PWR053
-U 1 1 5C726425
-P 12700 1300
-F 0 "#PWR053" H 12700 1150 50  0001 C CNN
-F 1 "+3.3V" H 12700 1440 50  0000 C CNN
-F 2 "" H 12700 1300 50  0001 C CNN
-F 3 "" H 12700 1300 50  0001 C CNN
-	1    12700 1300
-	1    0    0    -1  
-$EndComp
-$Comp
 L Avionics-Board-1-rescue:R R17
 U 1 1 5C7265E9
 P 12500 1600
@@ -1689,8 +1678,6 @@ Wire Wire Line
 	12350 1600 12300 1600
 Wire Wire Line
 	12300 1400 12400 1400
-Wire Wire Line
-	12700 1300 12700 1400
 Connection ~ 12700 1400
 $Comp
 L Avionics-Board-1-rescue:L L1
@@ -2083,4 +2070,32 @@ Wire Wire Line
 	7650 9350 7650 9300
 Wire Wire Line
 	7650 9300 8100 9300
+$Comp
+L Avionics-Board-1-rescue:GND #PWR0101
+U 1 1 5CCE34EA
+P 9900 9850
+F 0 "#PWR0101" H 9900 9600 50  0001 C CNN
+F 1 "GND" H 9900 9700 50  0000 C CNN
+F 2 "" H 9900 9850 50  0001 C CNN
+F 3 "" H 9900 9850 50  0001 C CNN
+	1    9900 9850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9900 9700 9800 9700
+Wire Wire Line
+	9900 9700 9900 9850
+$Comp
+L Avionics-Board-1-rescue:+BATT #PWR0102
+U 1 1 5CDB5E96
+P 12700 1200
+F 0 "#PWR0102" H 12700 1050 50  0001 C CNN
+F 1 "+BATT" H 12700 1340 50  0000 C CNN
+F 2 "" H 12700 1200 50  0001 C CNN
+F 3 "" H 12700 1200 50  0001 C CNN
+	1    12700 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12700 1200 12700 1400
 $EndSCHEMATC

@@ -1,4 +1,4 @@
-179806392777872
+202956273247317
 Battery_Holders
 Bulgin_BX0036_1xC
 
@@ -19733,6 +19733,13 @@ Edge_SMA
 5
 2
 DannysLib
+FEATHER-M0-DATALOGGER
+
+
+0
+32
+28
+DannysLib
 GPS_GT-07
 
 
@@ -19747,6 +19754,13 @@ JST-PH2
 4
 2
 DannysLib
+MAX-M8Q-Breakout
+
+
+0
+8
+8
+DannysLib
 MAX_M82
 
 
@@ -19754,12 +19768,26 @@ MAX_M82
 18
 18
 DannysLib
+MicroSD_DM3D-SF
+
+
+0
+12
+8
+DannysLib
 MPL3115A2
 LGA-8
 lga land grid array
 0
 8
 8
+DannysLib
+MPL3115A2-Breakout
+
+
+0
+9
+7
 DannysLib
 NucleoSocketStrip
 Through hole straight socket strip, 2x19, 2.54mm pitch, double rows
@@ -19781,6 +19809,13 @@ RFD900
 0
 19
 16
+DannysLib
+RFM95-Breakout
+
+
+0
+14
+14
 DannysLib
 RFM95W
 
@@ -21356,6 +21391,76 @@ Fiducial_Modern_SilkscreenTop
 0
 0
 0
+FoxWestern
+Adafruit_GPS
+
+
+0
+11
+11
+FoxWestern
+ADXL377
+
+
+0
+11
+7
+FoxWestern
+BNO055
+
+
+0
+14
+10
+FoxWestern
+Datalogger
+
+
+0
+12
+8
+FoxWestern
+DS3231
+
+
+0
+10
+8
+FoxWestern
+MCP9808
+
+
+0
+10
+8
+FoxWestern
+MPL115A2
+
+
+0
+8
+6
+FoxWestern
+NucleoSocketStrip
+Through hole straight socket strip, 2x19, 2.54mm pitch, double rows
+Through hole socket strip THT 2x19 2.54mm double row
+0
+38
+38
+FoxWestern
+PCA9685
+
+
+0
+28
+28
+FoxWestern
+XT60
+
+
+0
+2
+2
 Fuse_Holders_and_Fuses
 BladeFuse-CarType
 

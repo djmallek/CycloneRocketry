@@ -2032,4 +2032,70 @@ Text Label 2800 9450 1    60   ~ 0
 USB_D+
 Text Label 2900 9450 1    60   ~ 0
 USB_D-
+$Comp
+L Connector:Micro_SD_Card J6
+U 1 1 5CC9B146
+P 9000 9100
+F 0 "J6" H 8950 9817 50  0000 C CNN
+F 1 "Micro_SD_Card" H 8950 9726 50  0000 C CNN
+F 2 "DannysLib:MicroSD_DM3D-SF" H 10150 9400 50  0001 C CNN
+F 3 "http://katalog.we-online.de/em/datasheet/693072010801.pdf" H 9000 9100 50  0001 C CNN
+	1    9000 9100
+	1    0    0    -1  
+$EndComp
+NoConn ~ 8100 8800
+NoConn ~ 8100 9500
+Text Label 8100 9400 2    60   ~ 0
+MISO
+Text Label 8100 9000 2    60   ~ 0
+MOSI
+Text Label 8100 8900 2    60   ~ 0
+SD_CS
+Text Label 8100 9200 2    60   ~ 0
+SCK
+$Comp
+L Avionics-Board-1-rescue:+3.3V #PWR061
+U 1 1 5CCC4D2C
+P 7650 8950
+F 0 "#PWR061" H 7650 8800 50  0001 C CNN
+F 1 "+3.3V" H 7665 9123 50  0000 C CNN
+F 2 "" H 7650 8950 50  0001 C CNN
+F 3 "" H 7650 8950 50  0001 C CNN
+	1    7650 8950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7650 8950 7650 9100
+Wire Wire Line
+	7650 9100 8100 9100
+$Comp
+L Avionics-Board-1-rescue:GND #PWR062
+U 1 1 5CCD1F6F
+P 7650 9350
+F 0 "#PWR062" H 7650 9100 50  0001 C CNN
+F 1 "GND" H 7655 9177 50  0000 C CNN
+F 2 "" H 7650 9350 50  0001 C CNN
+F 3 "" H 7650 9350 50  0001 C CNN
+	1    7650 9350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7650 9350 7650 9300
+Wire Wire Line
+	7650 9300 8100 9300
+$Comp
+L Avionics-Board-1-rescue:GND #PWR?
+U 1 1 5CCE34EA
+P 9900 9850
+F 0 "#PWR?" H 9900 9600 50  0001 C CNN
+F 1 "GND" H 9900 9700 50  0000 C CNN
+F 2 "" H 9900 9850 50  0001 C CNN
+F 3 "" H 9900 9850 50  0001 C CNN
+	1    9900 9850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9900 9700 9800 9700
+Wire Wire Line
+	9900 9700 9900 9850
 $EndSCHEMATC
